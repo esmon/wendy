@@ -1,0 +1,155 @@
+body {
+	position: relative;
+}
+
+.nav-container {
+	background-color: white;
+	overflow: hidden;
+	max-height: 90px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+
+	-webkit-transition-property: all;
+	transition-property: all;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transition: -webkit-transform 0.35s;
+	-moz-transition: -moz-transform 0.35s;
+	-o-transition: -o-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+.logo {
+    float: left;
+    width: 100px;
+    height:auto;
+    padding-top: 30px;
+}
+
+.nav-content-container {
+	float: right;
+	list-style: none;
+	overflow: hidden;
+    margin-top: 60px;
+}
+
+.nav-content-container a {
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+}
+
+.nav-content {
+	float: left;
+	margin-left: 20px;
+}
+
+.hide-nav {
+	-webkit-transform: translate3d(0, -100%, 0);
+	transform: translate3d(0, -100%, 0);
+}
+
+.content {
+	padding-top: 60px;
+}
+
+.mast-head {
+	background-color: #41c6ea;
+	color: white;
+	margin-bottom: 50px;
+	padding: 15% 0;
+	text-align: center;
+}
+
+.work-content img, 
+.logo img,
+.wendy,
+.work-pictures{
+    width:100%;
+}
+
+/*	work section  */
+.work-container {
+	background-color: #40ae49;
+	margin-bottom: 50px;
+	padding: 5% 0;
+}
+
+.work-content {
+	color: white;
+	min-height: 155px;
+    overflow: hidden;
+}
+
+
+/*	about section  */
+.about-container {
+	background-color: #ee2c3e;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-bottom: 50px;
+	padding: 5% 0;
+}
+
+/*	contact  */
+.contact-container {
+	background-color: #28bdb3;
+	padding: 10% 0;
+	text-align: center;
+    color:white;
+}
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+	.work-content {
+		margin-bottom: 40px;
+	}
+
+	.about-container .four.columns {
+		float: none;
+	}
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+	.columns {
+		margin-left: 0;
+	}
+	.three.columns {
+	    width: 100%;
+	}
+
+
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+	.columns {
+		margin-left: 4%;
+	}
+
+	.three.columns {
+	    width: 22%;
+	}
+	    
+	.work-container .row,
+	.work-content {
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+
+}
