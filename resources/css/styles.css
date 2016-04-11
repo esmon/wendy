@@ -192,7 +192,11 @@ body {
 		transform: translate3d(100%, 0, 0);
 	}
 
-	.menu-is-active .nav-content-container {
+	body.menu-is-active {
+		overflow: hidden;
+	}
+
+	body.menu-is-active .nav-content-container {
 		-webkit-transform: translate3d(0, 0, 0);
 		transform: translate3d(0, 0, 0);
 	}

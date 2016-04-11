@@ -24,14 +24,14 @@ $(document).ready(function(){
 
     $(window).scroll(function () {
     	var currentScroll = $(this).scrollTop();
-    	console.log(currentScroll);
 
-    	if (currentScroll > previousScroll && currentScroll > 10){
-    		console.log('scroll down');
+        if($('menu-is-active').length) {
+            //do nothing
+        }
+    	else if (currentScroll > previousScroll && currentScroll > 10){
     		nav.addClass('hide-nav');
     	}
     	else {
-    		console.log('scroll up');
     		nav.removeClass('hide-nav');
     	}
     	previousScroll = currentScroll;
