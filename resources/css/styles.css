@@ -53,7 +53,7 @@ body {
 }
 
 .content {
-	padding-top: 60px;
+	padding-top: 100px;
 }
 
 .mast-head {
@@ -69,6 +69,13 @@ body {
 .wendy,
 .work-pictures{
     width:100%;
+}
+
+.work-pictures {
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+	-moz-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+    margin-bottom: 20px;
 }
 
 /*	work section  */
@@ -101,6 +108,16 @@ body {
 	padding: 10% 0;
 	text-align: center;
     color:white;
+}
+
+.carousel-container {
+/*    border: 1px so
+    
+    .work-pictures {
+        -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+	-moz-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);lid #f4f4f4;*/
+
 }
 
 /* Mobile first queries */

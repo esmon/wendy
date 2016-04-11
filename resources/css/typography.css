@@ -34,7 +34,6 @@ h3 {
     font-size: 50px;
     margin-bottom: 30px;
     margin-top: 0;
-    text-transform: uppercase;
     font-weight: 700;
 }
 
@@ -50,10 +49,17 @@ h5 {
 
 p,
 figcaption {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 26px;
 }
 
+p.alt {
+ color: white;    
+}
+
+p.art {
+    font-size: 20px;
+}
 /* Mobile first queries */
 
 /* Larger than mobile */
