@@ -5,10 +5,17 @@ $(document).ready(function(){
 
         if( target.length ) {
             event.preventDefault();
+            $('body').removeClass('menu-is-active');
             $('html, body').animate({
                 scrollTop: target.offset().top
             }, 1000);
         }
+    });
+
+    // Mobile Nav Menu Toggle
+    $('.menu-toggle').click(function(e){
+        e.preventDefault();
+        $('body').toggleClass('menu-is-active');
     });
 
     // sticky nav
