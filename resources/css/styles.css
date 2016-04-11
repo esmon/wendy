@@ -165,7 +165,7 @@ body {
 /* Mobile first queries */
 
 /* Larger than mobile */
-@media (min-width: 400px) {
+@media (min-width: 360px) {
 	.menu-toggle {
 		display: block;
 		margin-top: 30px;
