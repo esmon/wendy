@@ -75,7 +75,7 @@ body {
     -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
 	-moz-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
 	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
-	margin: 0 auto 20px;
+	margin: 1px auto 20px;
 	width: 99.5%;
 }
 
