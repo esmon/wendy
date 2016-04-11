@@ -79,6 +79,14 @@ body {
 	width: 99.5%;
 }
 
+.alt-image-height {
+    width: 70%;
+}
+
+.alt-image-height-50 {
+    width: 50%;
+}
+
 /*	work section  */
 .work-container {
 	background-color: #40ae49;
