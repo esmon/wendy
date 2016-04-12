@@ -131,6 +131,11 @@ body {
     width: 50%;
 }
 
+.video {
+    margin: 0 auto;
+    display: block;
+}
+
 /*	work section  */
 .work-container {
 	background-color: #40ae49;
@@ -226,6 +231,11 @@ body {
 	.work-content {
 		margin-bottom: 40px;
 	}
+    
+    .video {
+        width: 320px; 
+        height: 215px;
+    }
 
 	.content {
 		padding-top: 110px;
@@ -270,6 +280,11 @@ body {
 	.nav-content {
 		float: left;
 	}
+    
+    .video {
+        width: 640px;
+        height: 480px;
+    }
 }
 
 /* Larger than desktop */
