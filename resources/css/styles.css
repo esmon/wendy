@@ -296,6 +296,10 @@ body {
     }
 }
 
+a href {
+    text-decoration: none;
+}
+
 /* Larger than desktop */
 @media (min-width: 1000px) {
 	.columns {
