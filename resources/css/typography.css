@@ -60,6 +60,10 @@ p.alt {
 p.art {
     font-size: 20px;
 }
+
+.caption {
+    font-size:12px;
+}
 /* Mobile first queries */
 
 /* Larger than mobile */
