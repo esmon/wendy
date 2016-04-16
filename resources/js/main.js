@@ -37,16 +37,4 @@ $(document).ready(function(){
     	previousScroll = currentScroll;
     });
 
-    // Carousel
-    if ($('.carousel-container').length) {
-        $('.carousel-container').slick({
-            fade: true,
-            dots: false,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 1,
-            adaptiveHeight: true,
-        });
-    }
-
 });

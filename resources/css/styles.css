@@ -111,11 +111,8 @@ body {
     width:100%;
 }
 
-.slick-slider {
-	margin-bottom: 20px;
-}
-
 .carousel-container {
+	margin-bottom: 20px;
 	text-align: center;
 }
 
@@ -143,6 +140,13 @@ body {
 	color: white;
 	min-height: 155px;
     overflow: hidden;
+}
+
+.work-content a {
+	color: white;
+	font-size: 14px;
+    text-align: center;
+    text-decoration: none;
 }
 
 /*	about section  */
@@ -225,7 +229,7 @@ body {
 	}
 
 	.work-content {
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 	}
 
 	.alt-image-height,
@@ -306,7 +310,7 @@ a href {
 	}
 
 	.three.columns {
-	    width: 22%;
+	    width: 27%;
 	}
 	    
 	.work-container .row,
