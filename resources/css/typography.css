@@ -5,7 +5,6 @@ body {
 
 h1,
 h2,
-h4,
 h5,
 h6 {
     text-transform: initial;
@@ -38,8 +37,17 @@ h3 {
 }
 
 h4 {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.work-description h4 {
+    position: relative;
+    z-index: 5;
+}
+
+h4 i {
+    font-size: 14px;
 }
 
 h5 {
@@ -54,7 +62,7 @@ figcaption {
 }
 
 p.alt {
- color: white;    
+    color: white;    
 }
 
 p.art {
@@ -62,7 +70,7 @@ p.art {
 }
 
 .caption {
-    font-size:12px;
+    font-size: 12px;
 }
 /* Mobile first queries */
 

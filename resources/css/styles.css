@@ -133,7 +133,6 @@ body {
 .work-container {
 	background-color: #40ae49;
 	margin-bottom: 50px;
-	padding: 5% 0;
 }
 
 .work-content {
@@ -142,19 +141,52 @@ body {
     overflow: hidden;
 }
 
-.work-content a {
+.work-thumb {
+	background: black;
 	color: white;
+	display: block;
 	font-size: 14px;
-    text-align: center;
+	position: relative;
     text-decoration: none;
 }
+
+.work-thumb img {
+	display: block;
+	max-width: none;
+	opacity: 1;
+	position: relative;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.work-thumb:hover {
+	color: white;
+}
+
+.work-description {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.work-thumb:hover .work-description {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
 
 /*	about section  */
 .about-container {
 	background-color: #ee2c3e;
-	display:flex;
-	justify-content:center;
-	align-items:center;
 	margin-bottom: 50px;
 	padding: 5% 0;
 }
@@ -228,8 +260,40 @@ body {
 		float: none;
 	}
 
+	.work-container,
+	.about-container {
+		padding: 0;
+	}
+
 	.work-content {
 		margin-bottom: 30px;
+	}
+
+	.work-description {
+		display: block;
+		height: 42px;
+		opacity: 1;
+		padding: 20px;
+		top: initial;
+		text-align: left;
+		z-index: 5;
+	}
+
+	.work-description p {
+		margin-bottom: 0; 
+		position: relative;
+	}
+
+	.work-description:before {
+		background-color: black;
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0.7;
+		z-index: 0;
 	}
 
 	.alt-image-height,
@@ -246,8 +310,17 @@ body {
 		padding-top: 120px;
 	}
 
+	.about-container {
+		background-color: #ee2c3e;
+		display: block;
+	}
+
 	.about-container .four.columns {
 		float: none;
+	}
+
+	.about-description {
+		padding: 20px;
 	}
 }
 
@@ -286,6 +359,22 @@ body {
 		float: left;
 	}
 
+	.work-container,
+	.about-container {
+		padding: 5% 0;
+	}
+
+	.work-description {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: auto;
+		opacity: 0;
+		padding-left: 0;
+		top: 0;
+		text-align: center;
+	}
+
 	.alt-image-height {
 	    width: 70%;
 	}
@@ -299,8 +388,15 @@ body {
         height: 480px;
     }
     
-a href {
-    text-decoration: 
+	.about-container {
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+
+	.about-description {
+		padding: 0;
+	}
 }
 
 /* Larger than desktop */
