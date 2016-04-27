@@ -157,8 +157,6 @@ body {
 	position: relative;
 	-webkit-transition: opacity 0.35s;
 	transition: opacity 0.35s;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
 }
 
 .work-thumb:hover {
