@@ -381,6 +381,10 @@ body {
 	    width: 50%;
 	}
     
+    .alt-image-height-25 {
+	    width: 25%;
+	}
+    
     .video {
         width: 640px;
         height: 480px;
