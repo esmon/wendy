@@ -1,4 +1,4 @@
-# wendyla.ca
 
-## AWS
-https://esmon.signin.aws.amazon.com/console
+# Blog
+
+The default [wintersmith](https://github.com/jnordberg/wintersmith) template
