@@ -161,7 +161,7 @@ p {
   background-position: center;
   color: white;
   cursor: pointer;
-  height: 30vh;
+  height: 35vh;
   overflow: hidden;
   position: relative;
   display: -webkit-box;
@@ -215,6 +215,9 @@ p {
   -o-transition: -o-transform 0.35s;
   transition: transform 0.35s; }
 
+@media screen and (max-width: 800px) {
+  .work-content {
+    height: 45vh; } }
 .work-meta {
   position: fixed;
   -webkit-backface-visibility: hidden;
