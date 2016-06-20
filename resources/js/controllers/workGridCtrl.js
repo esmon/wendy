@@ -11,37 +11,37 @@ angular.module('wendyApp')
 		},
 		{
 			title: 'Migrant Offshore Aid Station',
-			image: 'images/child-crying.jpg',
+			image: 'resources/images/child-crying.jpg',
 			role: 'Art Direction',
 			slug: 'migrant-offshore-aid-station'
 		},
 		{
 			title: 'Starbucks',
-			image: 'images/starbucks.jpg',
+			image: 'resources/images/starbucks.jpg',
 			role: 'Art Direction',
 			slug: 'starbucks'
 		},
 		{
 			title: 'Beau\'s',
-			image: 'images/beaus.jpg',
+			image: 'resources/images/beaus.jpg',
 			role: 'Art Direction',
 			slug: 'beaus'
 		},
 		{
 			title: 'Tracksmith',
-			image: 'images/tracksmith.jpg',
+			image: 'resources/images/tracksmith.jpg',
 			role: 'Art Direction',
 			slug: 'tracksmith'
 		},
 		{
 			title: 'Philips Hue',
-			image: 'images/hue.jpg',
+			image: 'resources/images/hue.jpg',
 			role: 'Art Direction',
 			slug: 'philips-hue'
 		},
 		{
 			title: 'Levis',
-			image: 'images/levis.jpg',
+			image: 'resources/images/levis.jpg',
 			role: 'Art Direction',
 			slug: 'levis'
 		},

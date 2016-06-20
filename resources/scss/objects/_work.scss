@@ -1,0 +1,14 @@
+.work-meta {
+	position: fixed;
+	-webkit-backface-visibility: hidden;
+	width: 275px;
+	float: left;
+	padding: 0 35px 47px 32px;
+	z-index: 3;
+}
+
+.work-gallery {
+	margin: 0 135px 50px 375px;
+	max-width: 925px;
+	min-width: 275px;
+}

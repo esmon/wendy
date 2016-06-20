@@ -1,3 +1,7 @@
-<div class="work">
-	<p>{{ work }}</p>
-</div>
+<aside class="work-meta">
+	{{ work.details }}
+</aside>
+
+<section class="work-gallery">
+	<p ng-repeat="image in work.images">{{ image }}</p>
+</section>

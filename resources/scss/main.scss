@@ -5,10 +5,12 @@
 
 // layout
 @import "app";
+@import "about";
 
 // Objects
 @import "objects/nav";
 @import "objects/work-grid";
+@import "objects/work";
 
 * {
 	box-sizing: border-box;

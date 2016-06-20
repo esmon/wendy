@@ -18,7 +18,7 @@ module.exports = function(grunt) {
 		concat: {
 			all: {
 				src: ['resources/js/lib/**/*.js', 'resources/js/main.js', 'resources/js/**/*.js'],
-				dest: 'public/js/main.js'
+				dest: 'public/resources/js/main.js'
 			},
 		},
 
@@ -31,17 +31,11 @@ module.exports = function(grunt) {
 			    dest: 'public/',
 			    filter: 'isFile'
 			},
-			fonts: {
-				expand: true,
-				cwd: 'resources/fonts/',
-				src: '**',
-				dest: 'public/fonts',
-			},
 			images: {
 				expand: true,
 				cwd: 'resources/images/',
 				src: '**',
-				dest: 'public/images',
+				dest: 'public/resources/images',
 			},
 			robots: {
 				src: 'robots.txt',
@@ -49,14 +43,18 @@ module.exports = function(grunt) {
 			},
 			flexgridbower: {
 				src: 'bower_components/flexboxgrid/css/flexboxgrid.min.css',
-				dest: 'public/css/flexboxgrid.min.css'
+				dest: 'public/resources/css/flexboxgrid.min.css'
+			},
+			resume: {
+				src: 'resources/wendy_la_resume.pdf',
+				dest: 'public/resources/wendy_la_resume.pdf'
 			}
 		},
 
 		// concatenate bower components --------------
 		bower_concat: {
 			all: {
-				dest: 'public/js/vendor.js'
+				dest: 'public/resources/js/vendor.js'
 			}
 		},
 
@@ -124,7 +122,7 @@ module.exports = function(grunt) {
 		sass: {
 			dev: {
 				files: {
-					"public/css/main.css": "resources/scss/main.scss"
+					"public/resources/css/main.css": "resources/scss/main.scss"
 				}
 			},
 			prod: {
@@ -132,7 +130,7 @@ module.exports = function(grunt) {
 					style: "compressed"
 				},
 				files: {
-					"public/css/main.css": "resources/scss/main.scss"
+					"public/resources/css/main.css": "resources/scss/main.scss"
 				}
 			}
 		},

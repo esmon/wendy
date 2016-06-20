@@ -33,14 +33,23 @@ angular.module('wendyApp')
 .controller('aboutCtrl', function ($scope) {
 	'use strict';
 
-	$scope.about = 'My name is Wendy.\n I\’m a former graduate of linguistics and rhetorical studies, and have a working knowledge of at least four languages.\n I\'m an aspiring art director with skills in design. I believe fervently that the world can change for the better, and would love to do that through advertising.\n In my spare time, you can find me walking my dog, rock climbing, or just cycling around the city and enjoying a good cup of joe with a friend.';
+	$scope.about = {
+		image : 'resources/images/portrait.jpg',
+		copy : 'My name is Wendy.\n I\’m a former graduate of linguistics and rhetorical studies, and have a working knowledge of at least four languages.\n I\'m an aspiring art director with skills in design. I believe fervently that the world can change for the better, and would love to do that through advertising.\n In my spare time, you can find me walking my dog, rock climbing, or just cycling around the city and enjoying a good cup of joe with a friend.'
+	};
 });
 
 angular.module('wendyApp')
 .controller('workCtrl', function ($scope) {
 	'use strict';
 
-	$scope.work = 'work';
+	$scope.work = {
+		details : 'work details',
+		images : [
+			'derp',
+			'derp1'
+		]
+	};
 
 });
 
@@ -57,37 +66,37 @@ angular.module('wendyApp')
 		},
 		{
 			title: 'Migrant Offshore Aid Station',
-			image: 'images/child-crying.jpg',
+			image: 'resources/images/child-crying.jpg',
 			role: 'Art Direction',
 			slug: 'migrant-offshore-aid-station'
 		},
 		{
 			title: 'Starbucks',
-			image: 'images/starbucks.jpg',
+			image: 'resources/images/starbucks.jpg',
 			role: 'Art Direction',
 			slug: 'starbucks'
 		},
 		{
 			title: 'Beau\'s',
-			image: 'images/beaus.jpg',
+			image: 'resources/images/beaus.jpg',
 			role: 'Art Direction',
 			slug: 'beaus'
 		},
 		{
 			title: 'Tracksmith',
-			image: 'images/tracksmith.jpg',
+			image: 'resources/images/tracksmith.jpg',
 			role: 'Art Direction',
 			slug: 'tracksmith'
 		},
 		{
 			title: 'Philips Hue',
-			image: 'images/hue.jpg',
+			image: 'resources/images/hue.jpg',
 			role: 'Art Direction',
 			slug: 'philips-hue'
 		},
 		{
 			title: 'Levis',
-			image: 'images/levis.jpg',
+			image: 'resources/images/levis.jpg',
 			role: 'Art Direction',
 			slug: 'levis'
 		},
