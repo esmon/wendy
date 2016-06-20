@@ -15,11 +15,17 @@ pocketBetaApp.config(['$urlRouterProvider', '$locationProvider', function($urlRo
 		templateUrl: '/views/work-grid.html',
 		controller: 'workGridCtrl'
 	})
-	// form to enter climbing info
+	// work
 	.state('work', {
 		url: '/work/:slug',
 		templateUrl: '/views/work.html',
 		controller: 'workCtrl'
+	})
+	// about
+	.state('about', {
+		url: '/about',
+		templateUrl: '/views/about.html',
+		controller: 'aboutCtrl'
 	});
 
 }]);
