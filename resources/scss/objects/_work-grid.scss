@@ -1,5 +1,5 @@
 .work-grid {
-
+	margin: 0; // override flexboxgrid
 }
 
 .work-content {
@@ -7,8 +7,21 @@
 	background-size: cover;
 	background-position: center;
 	color: white;
+	cursor: pointer;
 	height: 30vh;
     overflow: hidden;
+    position: relative;
+
+    @include flexbox-vertical-center;
+
+    &:before {
+    	background-color: $c-black;
+    	position: absolute;
+    	top: 0;
+    	right: 0;
+    	bottom: 0;
+    	left: 0;
+    }
 
     &:hover {
     	.work-description {
@@ -20,13 +33,15 @@
 }
 
 .work-description {
+	color: $c-white;
 	opacity: 0;
 	text-align: center;
 
 	@include translate3d(0,0,0);
 	@include transition-property(opacity);
 	@include transition-transform(0.35s);
-	
+
+
 }
 
 

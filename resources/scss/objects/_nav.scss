@@ -1,0 +1,54 @@
+.nav-container {
+	background-color: $c-white;
+	overflow: hidden;
+	height: $header-height;
+	padding-right: $nav-padding;
+	padding-left: $nav-padding;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+
+	-webkit-transition-property: all;
+	transition-property: all;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transition: -webkit-transform 0.35s;
+	-moz-transition: -moz-transform 0.35s;
+	-o-transition: -o-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+.logo {
+    float: right;
+    width: 100px;
+    height: auto;
+    padding-top: 16px;
+
+    img {
+    	width:100%;
+    }
+}
+
+.nav-content-container {
+	float: left;
+	list-style: none;
+	margin: 30px 0;
+	padding: 0;
+
+	a {
+		text-decoration: none;
+		font-family: 'Cabin', sans-serif;
+		font-size: 20px;
+	}
+}
+
+.nav-content {
+	float: left;
+	margin-left: 20px;
+
+	&:first-child {
+		margin-left: 0;
+	}
+}

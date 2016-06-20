@@ -1,8 +1,9 @@
-<div class="work-grid row">
-	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 work-content" ng-repeat="work in works" style="background-image: url({{ work.image }});">
-		<figcaption class="work-description">
-			<p>{{ work.title }}</p>
-			<p>{{ work.role }}</p>
-		</figcaption>
-	</div>
+<div class="row work-grid">
+	<a ui-sref="work({slug: work.slug})" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 work-content" ng-repeat="work in works" style="background-image: url({{ work.image }});">
+		<p class="work-description">
+			{{ work.title }}
+			<br>
+			<span>{{ work.role }}</span>
+		</p>
+	</a>
 </div>

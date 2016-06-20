@@ -10,21 +10,42 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 		<!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
-		<link rel="preload" href='https://fonts.googleapis.com/css?family=Cabin:400,700|Playfair+Display:400,700' rel='stylesheet' type='text/css'>
+		<link rel="preload" href="https://fonts.googleapis.com/css?family=Cabin:400,700|Playfair+Display:400,700" rel="stylesheet">
 		<link rel="stylesheet" href="/css/flexboxgrid.min.css" type="text/css">
-		<link rel="stylesheet" href="/css/main.css">
+		<link rel="stylesheet" href="/css/main.css" type="text/css">
 		<base href="/">
 	</head>
 
 	<body>
+		<nav class="nav-container">
+			<ul class="nav-content-container">
+				<li class="nav-content">
+					<a href="/work">Work</a>
+				</li>
+				<li class="nav-content">
+					<a href="/about">About</a>
+				</li>
+				<li class="nav-content">
+					<a href="resources/wendy_la_resume.pdf">Resumé</a>
+				</li>
+				<li class="nav-content">
+					<a href="/contact">Contact</a>
+				</li>
+			</ul>
+
+			<a href="/" class="logo">
+				<img src="/images/logo.png" alt="logo">
+			</a>
+		</nav>
+
 		<main class="main-container" ng-cloak>
 
 			<section ui-view ng-cloak></section>
 
 		</main>
 
-		<script src="/js/vendor.js"></script>
-		<script src="/js/main.js"></script>
+		<script rel="preload" src="/js/vendor.js" as="script"></script>
+		<script rel="preload" src="/js/main.js" as="script"></script>
 
 	</body>
 </html>
