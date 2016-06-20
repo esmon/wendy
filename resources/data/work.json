@@ -4,48 +4,76 @@
 		"image": "",
 		"role": "Art Direction",
 		"slug": "coppertone",
-		"description": "derp"
+		"description": "derp",
+		"gallery": [
+			"image1",
+			"image2"
+		]
 	},
 	{
 		"title": "Migrant Offshore Aid Station",
 		"slug": "migrant-offshore-aid-station",
 		"image": "resources/images/child-crying.jpg",
 		"role": "Art Direction",
-		"description": "derp"
+		"description": "derp",
+		"gallery": [
+			"image1",
+			"image2"
+		]
 	},
 	{
 		"title": "Starbucks",
 		"slug": "starbucks",
 		"image": "resources/images/starbucks.jpg",
 		"role": "Art Direction",
-		"description": "derp"
+		"description": "derp",
+		"gallery": [
+			"image1",
+			"image2"
+		]
 	},
 	{
 		"title": "Beau's",
 		"slug": "beaus",
 		"image": "resources/images/beaus.jpg",
 		"role": "Art Direction",
-		"description": "derp"
+		"description": "derp",
+		"gallery": [
+			"image1",
+			"image2"
+		]
 	},
 	{
 		"title": "Tracksmith",
 		"slug": "tracksmith",
 		"image": "resources/images/tracksmith.jpg",
 		"role": "Art Direction",
-		"description": "derp"
+		"description": "derp",
+		"gallery": [
+			"image1",
+			"image2"
+		]
 	},
 	{
 		"title": "Philips Hue",
 		"slug": "philips-hue",
 		"image": "resources/images/hue.jpg",
 		"role": "Art Direction",
-		"description": "derp"
+		"description": "derp",
+		"gallery": [
+			"image1",
+			"image2"
+		]
 	},
 	{
 		"title": "Levis",
 		"slug": "levis",
 		"image": "resources/images/levis.jpg",
 		"role": "Art Direction",
-		"description": "derp"
+		"description": "derp",
+		"gallery": [
+			"image1",
+			"image2"
+		]
 	}
 ]

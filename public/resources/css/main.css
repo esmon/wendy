@@ -98,7 +98,6 @@ p, pre {
       font-size: 1.2em; } }
 
 .main-container {
-  background-color: #dfe3e3;
   overflow: hidden;
   margin: 0;
   padding-top: 83px;
@@ -250,7 +249,7 @@ img {
   border: none; }
 
 body {
-  background-color: #ffffff;
+  background-color: #dfe3e3;
   color: #000;
   position: relative; }
   @media screen and (max-width: 800px) {
