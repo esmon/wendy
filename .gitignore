@@ -40,3 +40,6 @@ resources/components
 
 #
 .DS_Store
+
+# bower
+bower_components
