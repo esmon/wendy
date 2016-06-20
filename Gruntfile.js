@@ -46,6 +46,10 @@ module.exports = function(grunt) {
 			robots: {
 				src: 'robots.txt',
 				dest: 'public/robots.txt'
+			},
+			flexgridbower: {
+				src: 'bower_components/flexboxgrid/css/flexboxgrid.min.css',
+				dest: 'public/css/flexboxgrid.min.css'
 			}
 		},
 
@@ -92,9 +96,8 @@ module.exports = function(grunt) {
 					browser: true,     // define globals exposed by browsers (document, navigator, FileReader, etc)
 					devel: true,       // define globals for console and alert
 					globals: {
-						pocketBetaApp: true,
+						wendyApp: true,
 						angular: true,     // define globals used by Angular
-						Firebase: true	   // define globals used by Firebase
 					}
 				},
 				files: {
@@ -107,9 +110,8 @@ module.exports = function(grunt) {
 				options: {
 					browser: true,     // define globals exposed by browsers (document, navigator, FileReader, etc)
 					globals: {
-						pocketBetaApp: true,
+						wendyApp: true,
 						angular: true,     // define globals used by Angular
-						Firebase: true	   // define globals used by Firebase
 					}
 				},
 				files : {
@@ -167,14 +169,14 @@ module.exports = function(grunt) {
 		// open browser app ------------------
 		open : {
 			dev : {
-				path: 'http://localhost:3030',
+				path: 'http://localhost:3333',
 				delay: 1000
 			}
 		}
 	});
 
 	// default task
-	grunt.registerTask('default', ['concat', 'copy', 'bower_concat', 'sass:dev', 'open', 'watch', 'livereload']);
+	grunt.registerTask('default', ['concat', 'bower_concat', 'sass:dev', 'copy', 'open', 'watch', 'livereload']);
 
 	// production task.
 	grunt.registerTask('build', ['jshint:prod', 'concat', 'copy', 'bower_concat', 'uglify', 'sass:prod']);

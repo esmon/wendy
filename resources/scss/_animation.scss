@@ -1,0 +1,48 @@
+.animation--title-slide-up {
+	@include translate3d(0,0,0);
+	@include animation-name(slide-up);
+	@include animation-duration(0.9s);
+	@include animation-timing-function(ease-in-out);
+}
+
+@-webkit-keyframes slide-up {
+	0% {
+		@include translate(0, 50px);
+		opacity: 0;
+	}
+	40% {
+		@include translate(0, 50px);
+		opacity: 0;
+	}
+	90% {
+		@include translate(0, 0);
+		opacity: 1;
+	}
+	100% {
+		@include translate(0, 0);
+		opacity: 1;
+	}
+}
+
+@keyframes slide-up {
+	0% {
+		@include translate(0, 50px);
+		opacity: 0;
+	}
+	40% {
+		@include translate(0, 50px);
+		opacity: 0;
+	}
+	90% {
+		@include translate(0, 0);
+		opacity: 1;
+	}
+	100% {
+		@include translate(0, 0);
+		opacity: 1;
+	}
+}
+
+.trans {
+	@include transition(all 0.35s ease-in-out);
+}

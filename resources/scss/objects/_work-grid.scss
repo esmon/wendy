@@ -1,0 +1,40 @@
+.work-grid {
+
+}
+
+.work-content {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: white;
+	height: 30vh;
+    overflow: hidden;
+
+    &:hover {
+    	.work-description {
+    		opacity: 1;
+    		-webkit-transform: translate3d(0,0,0);
+    		transform: translate3d(0,0,0);
+    	}
+    }
+}
+
+.work-description {
+	opacity: 0;
+	text-align: center;
+
+	@include translate3d(0,0,0);
+	@include transition-property(opacity);
+	@include transition-transform(0.35s);
+	
+}
+
+
+// mobiles sizes
+@media screen and (max-width: $lap) {
+
+}
+
+@media screen and (max-width: $palm-land) {
+
+}

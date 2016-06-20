@@ -1,0 +1,78 @@
+@import "variables";
+@import "mixins";
+@import "animation";
+@import "typography";
+
+// layout
+@import "app";
+
+// Objects
+@import "objects/work-grid";
+
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+  	-webkit-font-smoothing: antialiased; // makes the fonts less chunky - seems to be only available with the webkit prefix.
+ 	text-rendering: optimizeLegibility;
+}
+
+html {
+	font-size: 1em;
+	-webkit-text-size-adjust: 1em; /* 2 */
+	-ms-text-size-adjust: 1em;
+}
+
+html, body {
+	margin: 0;
+}
+
+img {
+	border: none;
+}
+
+body {
+	background-color: #ffffff;
+	color: $c-black;
+	position: relative;
+
+	@media screen and (max-width: $palm-land) {
+		margin: 0;
+		width: 100%;
+	}
+}
+
+a {
+	color: $c-light-black;
+	text-decoration: none;
+}
+
+*[contenteditable], button {
+	outline: none;
+}
+
+address {
+	font-style: normal;
+}
+
+.inactive {
+	opacity: 0;
+
+	@include transition-transform(0.35s);
+	@include translate3d(0, 40%, 0);
+	@include transition-property(all);
+}
+
+.is-active {
+	opacity: 1;
+
+	@include transition-transform(0.35s);
+	@include translate3d(0, 0, 0);
+	@include transition-property(all);
+}
+
+
+.fourohfour {
+	background-image: url(/images/404.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
