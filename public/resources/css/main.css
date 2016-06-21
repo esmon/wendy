@@ -229,7 +229,16 @@ p, pre {
   margin: 0 135px 50px 375px;
   max-width: 925px;
   min-width: 275px; }
+  .work-gallery img {
+    width: 100%; }
 
+@media screen and (max-width: 800px) {
+  .work-meta {
+    position: relative;
+    width: 100%; }
+
+  .work-gallery {
+    margin: 0; } }
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;

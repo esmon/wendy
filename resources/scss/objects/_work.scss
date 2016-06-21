@@ -11,4 +11,19 @@
 	margin: 0 135px 50px 375px;
 	max-width: 925px;
 	min-width: 275px;
+
+	img {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: $palm-land) {
+	.work-meta {
+		position: relative;
+		width: 100%;
+	}
+
+	.work-gallery {
+		margin: 0;
+	}
 }
