@@ -1,9 +1,9 @@
 angular.module('wendyApp')
-.controller('aboutCtrl', function ($scope) {
+.controller('aboutCtrl', ['$scope', 'wendy.api', function ($scope, aboutApi) {
 	'use strict';
 
-	$scope.about = {
-		image : 'resources/images/portrait.jpg',
-		copy : 'My name is Wendy.\n\nI\’m a former graduate of linguistics and rhetorical studies, and have a working knowledge of at least four languages.\n\nI\'m an aspiring art director with skills in design. I believe fervently that the world can change for the better, and would love to do that through advertising.\n\nIn my spare time, you can find me walking my dog, rock climbing, or just cycling around the city and enjoying a good cup of joe with a friend.'
-	};
-});
+	// get works data
+	aboutApi.getAbout().then(function(data){
+		$scope.about = data;
+	});
+}]);

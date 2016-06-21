@@ -30,75 +30,65 @@ pocketBetaApp.config(['$urlRouterProvider', '$locationProvider', function($urlRo
 
 }]);
 angular.module('wendyApp')
-.controller('aboutCtrl', function ($scope) {
+.controller('aboutCtrl', ['$scope', 'wendy.api', function ($scope, aboutApi) {
 	'use strict';
 
-	$scope.about = {
-		image : 'resources/images/portrait.jpg',
-		copy : 'My name is Wendy.\n\nI\’m a former graduate of linguistics and rhetorical studies, and have a working knowledge of at least four languages.\n\nI\'m an aspiring art director with skills in design. I believe fervently that the world can change for the better, and would love to do that through advertising.\n\nIn my spare time, you can find me walking my dog, rock climbing, or just cycling around the city and enjoying a good cup of joe with a friend.'
-	};
-});
+	// get works data
+	aboutApi.getAbout().then(function(data){
+		$scope.about = data;
+	});
+}]);
 
 angular.module('wendyApp')
-.controller('workCtrl', function ($scope) {
+.controller('workCtrl', ['$scope', '$stateParams', 'wendy.api', function ($scope, $stateParams, workApi) {
 	'use strict';
 
-	$scope.work = {
-		details : 'work details',
-		images : [
-			'derp',
-			'derp1'
-		]
-	};
+	// get work data
+	workApi.getSingleWork($stateParams.slug).then(function(data){
+	  $scope.work = data;
+	});
 
-});
+}]);
 
 angular.module('wendyApp')
-.controller('workGridCtrl', function ($scope) {
+.controller('workGridCtrl', ['$scope', 'wendy.api', function ($scope, worksApi) {
 	'use strict';
 
-	$scope.works = [
-		{
-			title: 'Coppertone',
-			image: '',
-			role: 'Art Direction',
-			slug: 'coppertone'
-		},
-		{
-			title: 'Migrant Offshore Aid Station',
-			image: 'resources/images/child-crying.jpg',
-			role: 'Art Direction',
-			slug: 'migrant-offshore-aid-station'
-		},
-		{
-			title: 'Starbucks',
-			image: 'resources/images/starbucks.jpg',
-			role: 'Art Direction',
-			slug: 'starbucks'
-		},
-		{
-			title: 'Beau\'s',
-			image: 'resources/images/beaus.jpg',
-			role: 'Art Direction',
-			slug: 'beaus'
-		},
-		{
-			title: 'Tracksmith',
-			image: 'resources/images/tracksmith.jpg',
-			role: 'Art Direction',
-			slug: 'tracksmith'
-		},
-		{
-			title: 'Philips Hue',
-			image: 'resources/images/hue.jpg',
-			role: 'Art Direction',
-			slug: 'philips-hue'
-		},
-		{
-			title: 'Levis',
-			image: 'resources/images/levis.jpg',
-			role: 'Art Direction',
-			slug: 'levis'
-		},
-	];
-});
+	// get works data
+	worksApi.getWorks().then(function(data){
+		$scope.works = data;
+	});
+
+}]);
+
+angular.module('wendyApp').factory('wendy.api', ['$http', function($http) {
+
+  function url(path) {
+    return '/resources/data/' + path + '.json';
+  }
+
+  return {
+    getWorks: function(type) {
+      return $http.get(url('works'))
+        .then(function(response) {
+          return response.data;
+        });
+    },
+
+    getSingleWork: function(slug) {
+      return $http.get(url('work/' + slug))
+        .then(function(response) {
+          console.log(response.data);
+          return response.data;
+        });
+    },
+
+    getAbout: function(type) {
+      return $http.get(url('about'))
+        .then(function(response) {
+          return response.data;
+        });
+    }
+  };
+
+}]);

@@ -1,13 +1,10 @@
 angular.module('wendyApp')
-.controller('workCtrl', function ($scope) {
+.controller('workCtrl', ['$scope', '$stateParams', 'wendy.api', function ($scope, $stateParams, workApi) {
 	'use strict';
 
-	$scope.work = {
-		details : 'work details',
-		images : [
-			'derp',
-			'derp1'
-		]
-	};
+	// get work data
+	workApi.getSingleWork($stateParams.slug).then(function(data){
+	  $scope.work = data;
+	});
 
-});
+}]);

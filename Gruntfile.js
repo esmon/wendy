@@ -48,6 +48,12 @@ module.exports = function(grunt) {
 			resume: {
 				src: 'resources/wendy_la_resume.pdf',
 				dest: 'public/resources/wendy_la_resume.pdf'
+			},
+			data: {
+				expand: true,
+				cwd: 'resources/data',
+				src: '**',
+				dest: 'public/resources/data'
 			}
 		},
 
@@ -161,6 +167,11 @@ module.exports = function(grunt) {
 			js: {
 				files: ['resources/js/**/*.js'],
 				tasks: ['jshint:dev','concat']
+			},
+
+			json: {
+				files: ['resources/data/**/*.json'],
+				tasks: ['copy:data']
 			}
 		},
 

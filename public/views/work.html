@@ -1,7 +1,8 @@
 <aside class="work-meta">
-	{{ work.details }}
+	<h1>{{ work.title }}</h1>
+	<p>{{ work.description }}</p>
 </aside>
 
 <section class="work-gallery">
-	<p ng-repeat="image in work.images">{{ image }}</p>
+	<img src="{{ image }}" ng-repeat="image in work.gallery" alt="">
 </section>
