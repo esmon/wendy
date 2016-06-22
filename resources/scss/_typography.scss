@@ -1,3 +1,12 @@
+h1,
+h2,
+h4,
+h5,
+h6 {
+    text-transform: initial;
+    font-family: 'Cabin', sans-serif;
+}
+
 h1 {	
 	font-size: 8em;
 	margin-top: 0;
@@ -18,32 +27,29 @@ h4 {
 
 }
 
-p, pre {
+p {
 	font-family: 'Playfair Display', serif;
 	font-size: 1.5em;
 	color: $c-light-black;
 	line-height: 1.5;
-	text-align: left;
 
 	a {
-		.sans-serif & {
-			color: lighten($c-orange, 10%);
+		color: $c-blue;
 
-			&:hover {
-				@include rollover($c-orange);
-			}
-		}
-		
-		.serif & {
-			color: lighten($c-blue, 10%);
-
-			&:hover {
-				@include rollover($c-blue);
-			}
+		&:hover {
+			@include rollover($c-blue);
 		}
 	}
 
 	@media screen and (max-width: $palm-land) {
 		font-size: 1.2em;
+	}
+}
+
+a {
+	color: $c-blue;
+
+	&:hover {
+		@include rollover($c-blue);
 	}
 }

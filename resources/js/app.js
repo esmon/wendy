@@ -9,8 +9,8 @@ pocketBetaApp.config(['$urlRouterProvider', '$locationProvider', '$stateProvider
 	// app homepage
 	.state('home', {
 		url: '/',
-		templateUrl: '/views/work-grid.html',
-		controller: 'workGridCtrl'
+		templateUrl: '/views/home.html',
+		controller: 'homeCtrl'
 	})
 	// work
 	.state('work', {

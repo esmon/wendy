@@ -9,8 +9,8 @@ pocketBetaApp.config(['$urlRouterProvider', '$locationProvider', '$stateProvider
 	// app homepage
 	.state('home', {
 		url: '/',
-		templateUrl: '/views/work-grid.html',
-		controller: 'workGridCtrl'
+		templateUrl: '/views/home.html',
+		controller: 'homeCtrl'
 	})
 	// work
 	.state('work', {
@@ -47,22 +47,27 @@ angular.module('wendyApp')
 }]);
 
 angular.module('wendyApp')
-.controller('workCtrl', ['$scope', '$stateParams', 'wendy.api', function ($scope, $stateParams, workApi) {
+.controller('homeCtrl', ['$scope', 'wendy.api', function ($scope, worksApi) {
 	'use strict';
 
-	// get work data
-	workApi.getSingleWork($stateParams.slug).then(function(data){
-	  $scope.work = data;
+	// get works data
+	worksApi.getWorks().then(function(data){
+		$scope.works = data;
 	});
 
 }]);
 
 angular.module('wendyApp')
-.controller('workGridCtrl', ['$scope', 'wendy.api', function ($scope, worksApi) {
+.controller('workCtrl', ['$scope', '$stateParams', 'wendy.api', function ($scope, $stateParams, workApi) {
 	'use strict';
 
+	// get single work data
+	workApi.getSingleWork($stateParams.slug).then(function(data){
+	  $scope.work = data;
+	});
+
 	// get works data
-	worksApi.getWorks().then(function(data){
+	workApi.getWorks().then(function(data){
 		$scope.works = data;
 	});
 
@@ -80,6 +85,22 @@ angular.module('wendyApp')
       });
     }
   };
+}]);
+angular.module('wendyApp').directive('worksGrid',
+['$state', 'wendy.api', function ($state, worksApi) {
+
+	return {
+		restrict: 'A',
+		scope: {
+			works: "=works"
+		},
+		replace: true,
+		templateUrl: '/views/works-grid.html',
+		link: function(scope) {
+
+		}
+	};
+
 }]);
 angular.module('wendyApp').factory('wendy.api', ['$http', function($http) {
 

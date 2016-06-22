@@ -63,6 +63,14 @@
   -o-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out; }
 
+h1,
+h2,
+h4,
+h5,
+h6 {
+  text-transform: initial;
+  font-family: 'Cabin', sans-serif; }
+
 h1 {
   font-size: 8em;
   margin-top: 0;
@@ -73,29 +81,29 @@ h2 {
   letter-spacing: 0px;
   text-align: center; }
 
-p, pre {
+p {
   font-family: 'Playfair Display', serif;
   font-size: 1.5em;
   color: #333;
-  line-height: 1.5;
-  text-align: left; }
-  .sans-serif p a, .sans-serif pre a {
-    color: #ff7252; }
-    .sans-serif p a:hover, .sans-serif pre a:hover {
-      color: #ff3306;
-      -webkit-transition: 0.35s;
-      -o-transition: 0.35s;
-      transition: 0.35s; }
-  .serif p a, .serif pre a {
-    color: #46637f; }
-    .serif p a:hover, .serif pre a:hover {
-      color: #2b3c4e;
+  line-height: 1.5; }
+  p a {
+    color: #41c6ea; }
+    p a:hover {
+      color: #1490b1;
       -webkit-transition: 0.35s;
       -o-transition: 0.35s;
       transition: 0.35s; }
   @media screen and (max-width: 800px) {
-    p, pre {
+    p {
       font-size: 1.2em; } }
+
+a {
+  color: #41c6ea; }
+  a:hover {
+    color: #1490b1;
+    -webkit-transition: 0.35s;
+    -o-transition: 0.35s;
+    transition: 0.35s; }
 
 .main-container {
   overflow: hidden;
@@ -150,6 +158,12 @@ p, pre {
   margin-left: 20px; }
   .nav-content:first-child {
     margin-left: 0; }
+
+.hero {
+  background-color: #41c6ea;
+  color: white;
+  padding: 8% 0;
+  text-align: center; }
 
 .work-grid {
   margin: 0; }
@@ -267,7 +281,6 @@ body {
       width: 100%; } }
 
 a {
-  color: #333;
   text-decoration: none; }
 
 *[contenteditable], button {

@@ -1,5 +1,5 @@
 angular.module('wendyApp')
-.controller('workGridCtrl', ['$scope', 'wendy.api', function ($scope, worksApi) {
+.controller('homeCtrl', ['$scope', 'wendy.api', function ($scope, worksApi) {
 	'use strict';
 
 	// get works data

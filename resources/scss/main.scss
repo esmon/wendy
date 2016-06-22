@@ -9,6 +9,7 @@
 
 // Objects
 @import "objects/nav";
+@import "objects/hero";
 @import "objects/work-grid";
 @import "objects/work";
 
@@ -45,7 +46,6 @@ body {
 }
 
 a {
-	color: $c-light-black;
 	text-decoration: none;
 }
 
