@@ -166,7 +166,9 @@ a {
   text-align: center; }
 
 .work-grid {
-  margin: 0; }
+  margin: 0;
+  position: relative;
+  z-index: 2; }
 
 .work-content {
   background-repeat: no-repeat;
@@ -237,7 +239,7 @@ a {
   width: 275px;
   float: left;
   padding: 0 35px 47px 32px;
-  z-index: 3; }
+  z-index: 0; }
 
 .work-gallery {
   margin: 0 135px 50px 375px;
@@ -253,6 +255,13 @@ a {
 
   .work-gallery {
     margin: 0; } }
+.contact {
+  background-color: #28bdb3;
+  color: white;
+  height: calc(100vh - 83px);
+  padding-top: 8%;
+  text-align: center; }
+
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;

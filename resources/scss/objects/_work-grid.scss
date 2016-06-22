@@ -1,5 +1,7 @@
 .work-grid {
 	margin: 0; // override flexboxgrid
+    position: relative;
+    z-index: 2;
 }
 
 .work-content {

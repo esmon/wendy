@@ -13,6 +13,12 @@ pocketBetaApp.config(['$urlRouterProvider', '$locationProvider', '$stateProvider
 		controller: 'homeCtrl'
 	})
 	// work
+	.state('works', {
+		url: '/works',
+		templateUrl: '/views/works.html',
+		controller: 'worksCtrl'
+	})
+	// work
 	.state('work', {
 		url: '/work/:slug',
 		templateUrl: '/views/work.html',
@@ -23,6 +29,12 @@ pocketBetaApp.config(['$urlRouterProvider', '$locationProvider', '$stateProvider
 		url: '/about',
 		templateUrl: '/views/about.html',
 		controller: 'aboutCtrl'
+	})
+	// about
+	.state('contact', {
+		url: '/contact',
+		templateUrl: '/views/contact.html',
+		controller: 'contactCtrl'
 	})
 	// 404
 	.state('404', {
@@ -47,6 +59,14 @@ angular.module('wendyApp')
 }]);
 
 angular.module('wendyApp')
+.controller('contactCtrl', ['$scope', function ($scope) {
+	'use strict';
+
+	$scope.contact = 'Reach me here';
+
+}]);
+
+angular.module('wendyApp')
 .controller('homeCtrl', ['$scope', 'wendy.api', function ($scope, worksApi) {
 	'use strict';
 
@@ -68,6 +88,17 @@ angular.module('wendyApp')
 
 	// get works data
 	workApi.getWorks().then(function(data){
+		$scope.works = data;
+	});
+
+}]);
+
+angular.module('wendyApp')
+.controller('worksCtrl', ['$scope', 'wendy.api', function ($scope, worksApi) {
+	'use strict';
+
+	// get works data
+	worksApi.getWorks().then(function(data){
 		$scope.works = data;
 	});
 

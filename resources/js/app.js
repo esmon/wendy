@@ -13,6 +13,12 @@ pocketBetaApp.config(['$urlRouterProvider', '$locationProvider', '$stateProvider
 		controller: 'homeCtrl'
 	})
 	// work
+	.state('works', {
+		url: '/works',
+		templateUrl: '/views/works.html',
+		controller: 'worksCtrl'
+	})
+	// work
 	.state('work', {
 		url: '/work/:slug',
 		templateUrl: '/views/work.html',
@@ -23,6 +29,12 @@ pocketBetaApp.config(['$urlRouterProvider', '$locationProvider', '$stateProvider
 		url: '/about',
 		templateUrl: '/views/about.html',
 		controller: 'aboutCtrl'
+	})
+	// about
+	.state('contact', {
+		url: '/contact',
+		templateUrl: '/views/contact.html',
+		controller: 'contactCtrl'
 	})
 	// 404
 	.state('404', {
