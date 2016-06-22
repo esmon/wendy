@@ -15,7 +15,6 @@ angular.module('wendyApp').factory('wendy.api', ['$http', function($http) {
     getSingleWork: function(slug) {
       return $http.get(url('work/' + slug))
         .then(function(response) {
-          console.log(response.data);
           return response.data;
         });
     },

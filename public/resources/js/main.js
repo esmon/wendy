@@ -2,11 +2,8 @@ var pocketBetaApp = angular.module('wendyApp', [
 	'ui.router'
 ]);
 
-pocketBetaApp.config(['$urlRouterProvider', '$locationProvider', function($urlRouterProvider, $locationProvider) {
-	$urlRouterProvider.otherwise('/');
+pocketBetaApp.config(['$urlRouterProvider', '$locationProvider', '$stateProvider', function($urlRouterProvider, $locationProvider, $stateProvider) {
 	$locationProvider.html5Mode(true);
-}])
-.config(['$stateProvider', function ($stateProvider) {
 
 	$stateProvider
 	// app homepage
@@ -26,6 +23,16 @@ pocketBetaApp.config(['$urlRouterProvider', '$locationProvider', function($urlRo
 		url: '/about',
 		templateUrl: '/views/about.html',
 		controller: 'aboutCtrl'
+	})
+	// 404
+	.state('404', {
+		templateUrl: '/views/404.html',
+	});
+
+	$urlRouterProvider.otherwise(function($injector, $location){
+		var state = $injector.get('$state');
+		state.go('404');
+		return $location.path();
 	});
 
 }]);
@@ -61,6 +68,19 @@ angular.module('wendyApp')
 
 }]);
 
+angular.module('wendyApp')
+.directive('dynamicHtml', ['$compile', function ($compile) {
+  return {
+    restrict: 'A',
+    replace: true,
+    link: function (scope, ele, attrs) {
+      scope.$watch(attrs.markup, function(html) {
+        ele.html(html);
+        $compile(ele.contents())(scope);
+      });
+    }
+  };
+}]);
 angular.module('wendyApp').factory('wendy.api', ['$http', function($http) {
 
   function url(path) {
@@ -78,7 +98,6 @@ angular.module('wendyApp').factory('wendy.api', ['$http', function($http) {
     getSingleWork: function(slug) {
       return $http.get(url('work/' + slug))
         .then(function(response) {
-          console.log(response.data);
           return response.data;
         });
     },
