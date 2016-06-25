@@ -185,7 +185,7 @@ module.exports = function(grunt) {
 	});
 
 	// default task
-	grunt.registerTask('default', ['concat', 'bower_concat', 'sass:dev', 'copy', 'open', 'watch', 'livereload']);
+	grunt.registerTask('default', ['jshint:dev', 'concat', 'bower_concat', 'sass:dev', 'copy', 'open', 'watch', 'livereload']);
 
 	// production task.
 	grunt.registerTask('build', ['jshint:prod', 'concat', 'copy', 'bower_concat', 'uglify', 'sass:prod']);
