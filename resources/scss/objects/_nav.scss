@@ -41,6 +41,10 @@
 		text-decoration: none;
 		font-family: 'Cabin', sans-serif;
 		font-size: 20px;
+
+		&.is-active {
+			color: darken($c-blue, 20%);
+		}
 	}
 }
 

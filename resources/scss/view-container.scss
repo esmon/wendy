@@ -1,0 +1,22 @@
+.view-container {
+	min-height: calc(100vh - 83px);
+}
+
+.view-container--home {
+	background-color: $c-blue;
+}
+
+.view-container--works {
+	background-color: $c-green;
+}
+
+.view-container--contact {
+	background-color: $c-teal;
+	color: white;
+	padding-top: 8%;
+	text-align: center;
+}
+
+.view-container--about {
+	background-color: $c-red;
+}

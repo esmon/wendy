@@ -1,19 +1,20 @@
 .work-meta {
 	position: fixed;
 	-webkit-backface-visibility: hidden;
-	width: 275px;
+	width: 300px;
 	float: left;
-	padding: 0 35px 47px 32px;
+	padding: 0 35px 45px 32px;
 	z-index: 0;
 }
 
 .work-gallery {
-	margin: 0 135px 50px 375px;
+	margin: 60px 135px 50px 375px;
 	max-width: 925px;
 	min-width: 275px;
 
 	img {
 		width: 100%;
+		@include box-shadow(0 1px 4px 0 rgba(0,0,0,0.37));
 	}
 }
 

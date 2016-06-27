@@ -16,20 +16,20 @@
 		<base href="/">
 	</head>
 
-	<body>
+	<body ng-controller="masterCtrl">
 		<nav class="nav-container">
 			<ul class="nav-content-container">
 				<li class="nav-content">
-					<a ui-sref="works">Work</a>
+					<a ui-sref="works" ng-class="{'is-active': navState === 'works'}">Work</a>
 				</li>
 				<li class="nav-content">
-					<a ui-sref="about">About</a>
+					<a ui-sref="about" ng-class="{'is-active': navState === 'about'}">About</a>
 				</li>
 				<li class="nav-content">
 					<a href="/resources/wendy_la_resume.pdf" target="_blank">Resumé</a>
 				</li>
 				<li class="nav-content">
-					<a ui-sref="contact">Contact</a>
+					<a ui-sref="contact" ng-class="{'is-active': navState === 'contact'}">Contact</a>
 				</li>
 			</ul>
 
@@ -40,7 +40,7 @@
 
 		<main class="main-container" ng-cloak>
 
-			<section ui-view ng-cloak></section>
+			<section ui-view ng-cloak ng-class="{'view-container--home': navState === 'home', 'view-container--about': navState === 'about', 'view-container--works': navState === 'works', 'view-container--contact': navState === 'contact'}" class="view-container"></section>
 
 		</main>
 

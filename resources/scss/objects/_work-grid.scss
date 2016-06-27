@@ -16,21 +16,30 @@
 
     @include flexbox-vertical-center;
 
-    &:before {
-    	background-color: $c-black;
+    &::before {
+        background-color: $c-black;
+        content: '';
+        opacity: 0;
     	position: absolute;
     	top: 0;
     	right: 0;
     	bottom: 0;
     	left: 0;
+        z-index: 0;
+        @include transition-property(all);
+        @include transition-transform(.35s);
+        @include translate3d(0, 0, 0);
     }
 
     &:hover {
     	.work-description {
     		opacity: 1;
-    		-webkit-transform: translate3d(0,0,0);
-    		transform: translate3d(0,0,0);
+            @include translate3d(0, 0, 0);
     	}
+
+        &::before {
+            opacity: .7;
+        }
     }
 }
 
@@ -38,12 +47,11 @@
 	color: $c-white;
 	opacity: 0;
 	text-align: center;
-
-	@include translate3d(0,0,0);
-	@include transition-property(opacity);
-	@include transition-transform(0.35s);
-
-
+    position: relative;
+    z-index: 1;
+    @include transition-property(all);
+    @include transition-transform(.35s);
+    @include translate3d(0, 8%, 0);
 }
 
 
@@ -55,5 +63,18 @@
 @media screen and (max-width: $palm-land) {
 	.work-content {
 		height: 45vh;
+
+        @include flex-justify-content(flex-end);
+
+        &::before {
+            opacity: .7;
+            top: 55%;
+        }
 	}
+
+    .work-description {
+        opacity: 1;
+        text-align: left;
+        @include translate3d(0, 0, 0);
+    }
 }

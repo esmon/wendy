@@ -72,18 +72,18 @@ h6 {
   font-family: 'Cabin', sans-serif; }
 
 h1 {
-  font-size: 8em;
+  font-size: 50px;
   margin-top: 0;
   line-height: 1; }
 
 h2 {
-  font-size: 5em;
+  font-size: 20px;
   letter-spacing: 0px;
   text-align: center; }
 
 p {
   font-family: 'Playfair Display', serif;
-  font-size: 1.5em;
+  font-size: 16;
   color: #333;
   line-height: 1.5; }
   p a {
@@ -110,6 +110,24 @@ a {
   margin: 0;
   padding-top: 83px;
   position: relative; }
+
+.view-container {
+  min-height: calc(100vh - 83px); }
+
+.view-container--home {
+  background-color: #41c6ea; }
+
+.view-container--works {
+  background-color: #40ae49; }
+
+.view-container--contact {
+  background-color: #28bdb3;
+  color: white;
+  padding-top: 8%;
+  text-align: center; }
+
+.view-container--about {
+  background-color: #ee2c3e; }
 
 .about {
   padding-right: 35px;
@@ -152,6 +170,8 @@ a {
     text-decoration: none;
     font-family: 'Cabin', sans-serif;
     font-size: 20px; }
+    .nav-content-container a.is-active {
+      color: #1490b1; }
 
 .nav-content {
   float: left;
@@ -160,11 +180,22 @@ a {
     margin-left: 0; }
 
 .hero {
-  background-color: #41c6ea;
   color: white;
   padding: 8% 0;
   text-align: center; }
 
+.hero__headline {
+  font-size: 120px; }
+
+.hero__subhead {
+  color: #fff; }
+
+@media screen and (max-width: 1024px) {
+  .hero__headline {
+    font-size: 80px; } }
+@media screen and (max-width: 800px) {
+  .hero__headline {
+    font-size: 50px; } }
 .work-grid {
   margin: 0;
   position: relative;
@@ -205,48 +236,81 @@ a {
   -moz-justify-content: center;
   -ms-justify-content: center;
   justify-content: center; }
-  .work-content:before {
+  .work-content::before {
     background-color: #000;
+    content: '';
+    opacity: 0;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0; }
+    left: 0;
+    z-index: 0;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition: -webkit-transform 0.35s;
+    -moz-transition: -moz-transform 0.35s;
+    -o-transition: -o-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
   .work-content:hover .work-description {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
+  .work-content:hover::before {
+    opacity: .7; }
 
 .work-description {
   color: #fff;
   opacity: 0;
   text-align: center;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
+  position: relative;
+  z-index: 1;
+  -webkit-transition-property: all;
+  transition-property: all;
   -webkit-transition: -webkit-transform 0.35s;
   -moz-transition: -moz-transform 0.35s;
   -o-transition: -o-transform 0.35s;
-  transition: transform 0.35s; }
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, 8%, 0);
+  transform: translate3d(0, 8%, 0); }
 
 @media screen and (max-width: 800px) {
   .work-content {
-    height: 45vh; } }
+    height: 45vh;
+    -ms-flex-pack: flex-end;
+    /* IE10 */
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    justify-content: flex-end; }
+    .work-content::before {
+      opacity: .7;
+      top: 55%; }
+
+  .work-description {
+    opacity: 1;
+    text-align: left;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
 .work-meta {
   position: fixed;
   -webkit-backface-visibility: hidden;
-  width: 275px;
+  width: 300px;
   float: left;
-  padding: 0 35px 47px 32px;
+  padding: 0 35px 45px 32px;
   z-index: 0; }
 
 .work-gallery {
-  margin: 0 135px 50px 375px;
+  margin: 60px 135px 50px 375px;
   max-width: 925px;
   min-width: 275px; }
   .work-gallery img {
-    width: 100%; }
+    width: 100%;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37); }
 
 @media screen and (max-width: 800px) {
   .work-meta {
@@ -255,12 +319,8 @@ a {
 
   .work-gallery {
     margin: 0; } }
-.contact {
-  background-color: #28bdb3;
-  color: white;
-  height: calc(100vh - 83px);
-  padding-top: 8%;
-  text-align: center; }
+.form__messaging {
+  opacity: 0; }
 
 * {
   box-sizing: border-box;

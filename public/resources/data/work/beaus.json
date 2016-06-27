@@ -1,11 +1,23 @@
 {
     "title":"Beau's",
     "role":"Art Direction",
-    "description":"<p>Beau’s All Natural is a business based in Ottawa, Ontario that believes fervently in supporting and helping the community. At heart, they are skeptical of traditional advertising and believe in word of mouth to advertise their products. Fundamentally, they would rather put money towards helping people.</p>The campaign concept is about Beau’s All Natural giving back to the community. So, rather than investing in conventional forms of advertising, Beau’s All Natural would put their money towards helping people, using their products as a form of good. They hope to lead by example for sustainable and conscious living. Beau’s All Natural believes in their vision and we believe they are truly that virtuously good, too, and hope to maintain their integrity in our ads.</p><p>Art Director: Wendy La, <a href=\"https://nickperrywriter.squarespace.com/work/#/migrant-offshore-aid-station/\">Copy Writer: Nick Perry</a></p>",
+    "description":"<p>Beau’s All Natural is a business based in Ottawa, Ontario that believes fervently in supporting and helping the community. At heart, they are skeptical of traditional advertising and believe in word of mouth to advertise their products. Fundamentally, they would rather put money towards helping people.</p><p>The campaign concept is about Beau’s All Natural giving back to the community. So, rather than investing in conventional forms of advertising, Beau’s All Natural would put their money towards helping people, using their products as a form of good. They hope to lead by example for sustainable and conscious living. Beau’s All Natural believes in their vision and we believe they are truly that virtuously good, too, and hope to maintain their integrity in our ads.</p><p>Art Director: Wendy La,<br>Copy Writer: <a href=\"https://nickperrywriter.squarespace.com/work/#/migrant-offshore-aid-station/\">Nick Perry</a></p><p>Acts of kindness are very important to Beau’s All Natural. To promote acts of kindness within the community, Beau’s will reward individuals who give back by randomly selecting local heroes. Through the hashtag #BeausActsofKindness, people can tag themselves to show what they have done.</p>",
     "gallery":[
-        "resources/images/beaus/beer.jpg",
-        "resources/images/beaus/beer2.jpg",
-        "resources/images/beaus/beer3.jpg",
-        "resources/images/beaus/instagram-beaus.jpg"
+		{
+			"image":"resources/images/beaus/beer.jpg",
+			"description":"<p>Ambient</p>"
+		},
+		{
+			"image":"resources/images/beaus/beer2.jpg",
+			"description":"<p>OOH/MURAL</p>"
+		},
+		{
+			"image":"resources/images/beaus/beer3.jpg",
+			"description":"<p>OOH/MURAL</p>"
+		},
+		{
+			"image":"resources/images/beaus/instagram-beaus.jpg",
+			"description":"<p>Social Media</p>"
+		}
     ]
 }

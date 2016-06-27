@@ -4,7 +4,12 @@
 </aside>
 
 <section class="work-gallery">
-	<img src="{{ image }}" ng-repeat="image in work.gallery" alt="">
+	<figure ng-repeat="work in work.gallery">
+		<img src="{{ work.image }}"  alt="" ng-if="work.image">
+		<iframe class="work__video" width="640" height="480" ng-src="{{ work.video | trustAsResourceUrl }}" frameborder="0" allowfullscreen ng-if="work.video"></iframe>
+		<figcaption dynamic-html markup="work.description"></figcaption>
+	</figure>
+	
 </section>
 
 <div works-grid works="works"></div>

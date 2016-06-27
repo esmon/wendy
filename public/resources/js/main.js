@@ -64,6 +64,22 @@ angular.module('wendyApp')
 
 	$scope.contact = 'Reach me here';
 
+	$scope.message = '';
+	$scope.contactInfo = {};
+	$scope.emailSuccess = false;
+
+
+	$scope.submitForm = function() {
+		console.log($scope.contactInfo);
+		$scope.emailSuccess = true;
+
+		// emailApi.postEmail({email: $scope.email}).then(function(data) {
+		// 	console.log('it worked');
+		// 	$scope.emailSuccess = true;
+		// 	$scope.message = 'success';
+		// });
+	};
+
 }]);
 
 angular.module('wendyApp')
@@ -78,12 +94,27 @@ angular.module('wendyApp')
 }]);
 
 angular.module('wendyApp')
+.controller('masterCtrl', ['$scope', '$state', '$window', function ($scope, $state, $window) {
+	'use strict';
+
+	$scope.$on('$viewContentLoaded', function() {
+	  $window.scrollTo(0,0);
+
+	  $scope.navState = $state.current.name;
+
+	  console.log($scope.navState);
+	});
+
+}]);
+
+angular.module('wendyApp')
 .controller('workCtrl', ['$scope', '$stateParams', 'wendy.api', function ($scope, $stateParams, workApi) {
 	'use strict';
 
 	// get single work data
 	workApi.getSingleWork($stateParams.slug).then(function(data){
 	  $scope.work = data;
+	  console.log($scope.work);
 	});
 
 	// get works data
@@ -162,4 +193,10 @@ angular.module('wendyApp').factory('wendy.api', ['$http', function($http) {
     }
   };
 
+}]);
+angular.module('wendyApp')
+.filter('trustAsResourceUrl', ['$sce', function($sce) {
+    return function(val) {
+        return $sce.trustAsResourceUrl(val);
+    };
 }]);

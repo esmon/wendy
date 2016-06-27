@@ -5,6 +5,7 @@ angular.module('wendyApp')
 	// get single work data
 	workApi.getSingleWork($stateParams.slug).then(function(data){
 	  $scope.work = data;
+	  console.log($scope.work);
 	});
 
 	// get works data

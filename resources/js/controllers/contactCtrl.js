@@ -4,4 +4,20 @@ angular.module('wendyApp')
 
 	$scope.contact = 'Reach me here';
 
+	$scope.message = '';
+	$scope.contactInfo = {};
+	$scope.emailSuccess = false;
+
+
+	$scope.submitForm = function() {
+		console.log($scope.contactInfo);
+		$scope.emailSuccess = true;
+
+		// emailApi.postEmail({email: $scope.email}).then(function(data) {
+		// 	console.log('it worked');
+		// 	$scope.emailSuccess = true;
+		// 	$scope.message = 'success';
+		// });
+	};
+
 }]);

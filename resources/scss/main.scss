@@ -5,6 +5,7 @@
 
 // layout
 @import "app";
+@import "view-container";
 @import "about";
 
 // Objects
@@ -73,7 +74,6 @@ address {
 	@include translate3d(0, 0, 0);
 	@include transition-property(all);
 }
-
 
 .fourohfour {
 	background-image: url(/images/404.gif);

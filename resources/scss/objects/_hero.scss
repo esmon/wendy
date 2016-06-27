@@ -1,6 +1,27 @@
 .hero {
-	background-color: $c-blue;
 	color: white;
 	padding: 8% 0;
 	text-align: center;
+}
+
+.hero__headline {
+	font-size: 120px;
+}
+
+.hero__subhead {
+	color: $c-white;
+	
+}
+
+// mobiles sizes
+@media screen and (max-width: $lap) {
+	.hero__headline {
+		font-size: 80px;
+	}
+}
+
+@media screen and (max-width: $palm-land) {
+	.hero__headline {
+		font-size: 50px;
+	}
 }
