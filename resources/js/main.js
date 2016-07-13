@@ -181,7 +181,7 @@ angular.module('wendyApp').directive('worksGrid',
 			works: "=works"
 		},
 		replace: true,
-		templateUrl: '/views/works-grid.html',
+		templateUrl: '/wendy/views/works-grid.html',
 		link: function(scope) {
 
 		}
@@ -191,7 +191,7 @@ angular.module('wendyApp').directive('worksGrid',
 angular.module('wendyApp').factory('wendy.api', ['$http', function($http) {
 
   function url(path) {
-    return '/resources/data/' + path + '.json';
+    return '/wendy/resources/data/' + path + '.json';
   }
 
   return {
