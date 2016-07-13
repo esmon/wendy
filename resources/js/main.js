@@ -8,31 +8,31 @@ pocketBetaApp.config(['$urlRouterProvider', '$locationProvider', '$stateProvider
 	$stateProvider
 	// app homepage
 	.state('home', {
-		url: '/',
+		url: '/wendy/',
 		templateUrl: '/wendy/views/home.html',
 		controller: 'homeCtrl'
 	})
 	// work
 	.state('works', {
-		url: '/works',
+		url: '/wendy/works',
 		templateUrl: '/wendy/views/works.html',
 		controller: 'worksCtrl'
 	})
 	// work
 	.state('work', {
-		url: '/work/:slug',
+		url: '/wendy/work/:slug',
 		templateUrl: '/wendy/views/work.html',
 		controller: 'workCtrl'
 	})
 	// about
 	.state('about', {
-		url: '/about',
+		url: '/wendy/about',
 		templateUrl: '/wendy/views/about.html',
 		controller: 'aboutCtrl'
 	})
 	// about
 	.state('contact', {
-		url: '/contact',
+		url: '/wendy/contact',
 		templateUrl: '/wendy/views/contact.html',
 		controller: 'contactCtrl'
 	})
