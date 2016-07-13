@@ -7,7 +7,7 @@ angular.module('wendyApp')
 
 	  $scope.navState = $state.current.name;
 
-	  console.log($scope.navState);
+	  // console.log($scope.navState);
 	});
 
 }]);

@@ -1,11 +1,12 @@
 .hero {
 	color: white;
-	padding: 8% 0;
+	padding: 15% 0;
 	text-align: center;
 }
 
 .hero__headline {
 	font-size: 120px;
+	margin-bottom: 0;
 }
 
 .hero__subhead {
@@ -15,12 +16,22 @@
 
 // mobiles sizes
 @media screen and (max-width: $lap) {
+	.hero {
+		padding: 20% 0;
+	}
+
 	.hero__headline {
 		font-size: 80px;
 	}
 }
 
 @media screen and (max-width: $palm-land) {
+	.hero {
+		padding: 30% 0;
+	}
+}
+
+@media screen and (max-width: $palm-port) {
 	.hero__headline {
 		font-size: 50px;
 	}

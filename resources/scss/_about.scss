@@ -1,4 +1,17 @@
 .about {
-	padding-right: $nav-padding;
+	padding-top: 60px;
+}
+
+.about__profile {
+	border-radius: 5px;
+	display: block;
+	margin: 0 auto 40px;
+	overflow: hidden;
+	width: 100%;
+	@include box-shadow(0 1px 4px 0 rgba(0,0,0,0.37));
+}
+
+.about__copy {
 	padding-left: $nav-padding;
+	padding-right: $nav-padding;	
 }

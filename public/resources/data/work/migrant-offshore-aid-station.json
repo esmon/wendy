@@ -1,31 +1,33 @@
 {
-    "title":"Migrant Offshore Aid Station",
-    "role":"Art Direction",
-    "description":"<p>Migrant Offshore Aid Station is a privately funded organization that saves refugees who are fleeing from their home country on dinghies from drowning at sea. By targeting visible achievers (in airports), the campaign would demonstrate the relationship between the journey of a traveler and the journey of a refugee. </p><p>Art Director: Wendy La, Copy Writer: <a href=\"https://nickperrywriter.squarespace.com/work/#/migrant-offshore-aid-station/\">Nick Perry</a></p>",
-    "gallery":[
-        {
-            "image":"/resources/images/moas/moas.jpg",
-            "description":"<p>OOH Airport</p>"
-        },
-        {
-            "image":"/resources/images/moas/moas2.jpg",
-            "description":"<p>OOH Airport</p>"
-        },
-        {
-            "image":"/resources/images/moas/moas3.jpg",
-            "description":"<p>OOH Airport</p>"
-        },
-        {
-            "image":"/resources/images/moas/moas4.jpg",
-            "description":"<p>OOH Airport</p>"
-        },
-        {
-            "image":"/resources/images/moas/moas5.jpg",
-            "description":"<p>Elevator Airport Ad/Experiential: Using the confinement of an elevator, a video will be playing that will create a live and simulated experience of being in a dinghy, similar to what a refugee would be on. The video will emulate the experience a refugee would endure while traveling sea, fleeing from their war-torn country.</p>"
-        },
-        {
-            "image":"/resources/images/moas/moas6.jpg",
-            "description":"<p>Ambient</p>"
-        }
-    ]
+	"title":"Migrant Offshore Aid Station",
+	"slug":"migrant-offshore-aid-station",
+	"role":"Art Direction",
+	"image":"/resources/images/child-crying.jpg",
+	"description":"<p>Migrant Offshore Aid Station is a privately funded organization that saves refugees who are fleeing from their home country on dinghies from drowning at sea. By targeting visible achievers (in airports), the campaign would demonstrate the relationship between the journey of a traveler and the journey of a refugee. </p><p>Art Director: Wendy La, Copy Writer: <a href=\"https://nickperrywriter.squarespace.com/work/#/migrant-offshore-aid-station/\">Nick Perry</a></p>",
+	"gallery":[
+		{
+			"image":"/resources/images/moas/moas.jpg",
+			"description":"<p>OOH Airport</p>"
+		},
+		{
+			"image":"/resources/images/moas/moas2.jpg",
+			"description":"<p>OOH Airport</p>"
+		},
+		{
+			"image":"/resources/images/moas/moas3.jpg",
+			"description":"<p>OOH Airport</p>"
+		},
+		{
+			"image":"/resources/images/moas/moas4.jpg",
+			"description":"<p>OOH Airport</p>"
+		},
+		{
+			"image":"/resources/images/moas/moas5.jpg",
+			"description":"<p>Elevator Airport Ad/Experiential: Using the confinement of an elevator, a video will be playing that will create a live and simulated experience of being in a dinghy, similar to what a refugee would be on. The video will emulate the experience a refugee would endure while traveling sea, fleeing from their war-torn country.</p>"
+		},
+		{
+			"image":"/resources/images/moas/moas6.jpg",
+			"description":"<p>Ambient</p>"
+		}
+	]
 }

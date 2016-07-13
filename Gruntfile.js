@@ -82,6 +82,7 @@ module.exports = function(grunt) {
 		// javascript linting ------------------------
 		jshint: {
 			options: {
+				esversion: 6,
 				curly: true,        // require {} braces around blocks
 				eqeqeq: true,       // require use of === and !== equality comparison to prevent value coercion
 				eqnull: true,       // suppress warnings about == null comparisons
@@ -97,6 +98,7 @@ module.exports = function(grunt) {
 			// client side dev
 			dev: {
 				options: {
+					esversion: 6,
 					browser: true,     // define globals exposed by browsers (document, navigator, FileReader, etc)
 					devel: true,       // define globals for console and alert
 					globals: {

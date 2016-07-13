@@ -1,8 +1,10 @@
 {
-    "title":"Hue",
-    "role":"Art Direction",
-    "description":"<p>Philips Hue Wireless lightbulb are wireless lightbulbs that can be controlled by your phone. Through your phone, you can select from 16 million colours to suit any mood or to the cadence of your music. Targeting innovators, the campaign positions the lightbulbs as an ingredient to your life at home. Philips Hue Lightbulbs enhances and enriches your home because they are completely customizeable to your mood.</p>",
-    "gallery":[
+	"title":"Philips Hue",
+	"slug":"philips-hue",
+	"role":"Art Direction",
+	"image":"/resources/images/hue.jpg",
+	"description":"<p>Philips Hue Wireless lightbulb are wireless lightbulbs that can be controlled by your phone. Through your phone, you can select from 16 million colours to suit any mood or to the cadence of your music. Targeting innovators, the campaign positions the lightbulbs as an ingredient to your life at home. Philips Hue Lightbulbs enhances and enriches your home because they are completely customizeable to your mood.</p>",
+	"gallery":[
 		{
 			"image":"resources/images/Hue/hue-web3.jpg",
 			"description":"<p>OOH</p>"
@@ -27,5 +29,5 @@
 			"video":"https://www.youtube.com/embed/2rBApTdwvOQ",
 			"description":"<p>Experiential</p>"
 		}
-    ]
+	]
 }

@@ -56,13 +56,9 @@
 
 
 // mobiles sizes
-@media screen and (max-width: $lap) {
-
-}
-
 @media screen and (max-width: $palm-land) {
-	.work-content {
-		height: 45vh;
+    .work-content {
+        height: 28vh;
 
         @include flex-justify-content(flex-end);
 
@@ -70,11 +66,21 @@
             opacity: .7;
             top: 55%;
         }
-	}
+    }
 
     .work-description {
         opacity: 1;
         text-align: left;
         @include translate3d(0, 0, 0);
     }
+}
+
+@media screen and (max-width: $palm-port) {
+	.work-content {
+		height: 45vh;
+
+        &::before {
+            top: 69%;
+        }
+	}
 }
