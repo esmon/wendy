@@ -1,0 +1,51 @@
+<!doctype html>
+<html ng-app="wendyApp">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8">
+
+		<title>Wendy La | Art Direction </title>
+		<meta name="description" content="{{ meta.description }}">
+		<meta name="author" content="Wendy La">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+		<link href="https://fonts.googleapis.com/css?family=Cabin:400,700|Playfair+Display:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="/resources/css/flexboxgrid.min.css" type="text/css">
+		<link rel="stylesheet" href="/resources/css/main.css" type="text/css">
+		<base href="/">
+	</head>
+
+	<body ng-controller="masterCtrl">
+		<nav class="nav-container">
+			<ul class="nav-content-container">
+				<li class="nav-content">
+					<a ui-sref="works" ng-class="{'is-active': navState === 'works'}">Work</a>
+				</li>
+				<li class="nav-content">
+					<a ui-sref="about" ng-class="{'is-active': navState === 'about'}">About</a>
+				</li>
+				<li class="nav-content">
+					<a href="/resources/wendy_la_resume.pdf" target="_blank">Resumé</a>
+				</li>
+				<li class="nav-content">
+					<a ui-sref="contact" ng-class="{'is-active': navState === 'contact'}">Contact</a>
+				</li>
+			</ul>
+
+			<a ui-sref="home" class="logo">
+				<img src="/resources/images/logo.png" alt="logo">
+			</a>
+		</nav>
+
+		<main class="main-container" ng-cloak>
+
+			<section ui-view ng-cloak ng-class="{'view-container--home': navState === 'home', 'view-container--about': navState === 'about', 'view-container--works': navState === 'works', 'view-container--contact': navState === 'contact'}" class="view-container"></section>
+
+		</main>
+
+		<script rel="preload" src="/resources/js/vendor.js" as="script"></script>
+		<script rel="preload" src="/resources/js/main.js" as="script"></script>
+
+	</body>
+</html>
