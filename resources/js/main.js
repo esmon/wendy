@@ -9,36 +9,36 @@ pocketBetaApp.config(['$urlRouterProvider', '$locationProvider', '$stateProvider
 	// app homepage
 	.state('home', {
 		url: '/',
-		templateUrl: '/views/home.html',
+		templateUrl: '/wendy/views/home.html',
 		controller: 'homeCtrl'
 	})
 	// work
 	.state('works', {
 		url: '/works',
-		templateUrl: '/views/works.html',
+		templateUrl: '/wendy/views/works.html',
 		controller: 'worksCtrl'
 	})
 	// work
 	.state('work', {
 		url: '/work/:slug',
-		templateUrl: '/views/work.html',
+		templateUrl: '/wendy/views/work.html',
 		controller: 'workCtrl'
 	})
 	// about
 	.state('about', {
 		url: '/about',
-		templateUrl: '/views/about.html',
+		templateUrl: '/wendy/views/about.html',
 		controller: 'aboutCtrl'
 	})
 	// about
 	.state('contact', {
 		url: '/contact',
-		templateUrl: '/views/contact.html',
+		templateUrl: '/wendy/views/contact.html',
 		controller: 'contactCtrl'
 	})
 	// 404
 	.state('404', {
-		templateUrl: '/views/404.html',
+		templateUrl: '/wendy/views/404.html',
 	});
 
 	$urlRouterProvider.otherwise(function($injector, $location){
