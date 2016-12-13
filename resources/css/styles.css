@@ -2,6 +2,12 @@ body {
 	position: relative;
 }
 
+html {
+	font-size: 1em;
+	-webkit-text-size-adjust: 1em; /* 2 */
+	-ms-text-size-adjust: 1em;
+}
+
 .nav-container {
 	background-color: white;
 	padding: 20px;
@@ -41,11 +47,11 @@ body {
 }
 
 .content-container h1 {
-	font-size: 80px;
+	font-size: 5em;
 	margin: 0 auto;
 	text-align: center;
 	text-transform: uppercase;
-	width: 600px;
+	width: 80%;
 }
 
 .content-container h1 span {
@@ -53,26 +59,16 @@ body {
 }
 
 
-
-/* Larger than desktop */
-@media (min-width: 1000px) {
-	.columns {
-		margin-left: 4%;
-	}
-
-	.three.columns {
-	    width: 27%;
-	}
-	    
-	.work-container .row,
-	.work-content {
-		display:flex;
-		justify-content:center;
-		align-items:center;
+// mobiles sizes
+@media screen and (max-width: 1024px) {
+	.content-container h1 {
+		font-size: 3em;
 	}
 }
 
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {
-
+@media screen and (max-width: 480px) {
+	.content-container h1 {
+		font-size: 2em;
+		width: 90%;
+	}
 }
