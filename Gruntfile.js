@@ -42,7 +42,7 @@ module.exports = function(grunt) {
 				dest: 'public/robots.txt'
 			},
 			flexgridbower: {
-				src: 'bower_components/flexboxgrid/css/flexboxgrid.min.css',
+				src: 'bower_components/flexboxgrid/dist/flexboxgrid.min.css',
 				dest: 'public/resources/css/flexboxgrid.min.css'
 			},
 			resume: {
@@ -190,6 +190,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', ['jshint:dev', 'concat', 'bower_concat', 'sass:dev', 'copy', 'open', 'watch', 'livereload']);
 
 	// production task.
-	grunt.registerTask('build', ['jshint:prod', 'concat', 'copy', 'bower_concat', 'uglify', 'sass:prod']);
+	grunt.registerTask('build', ['jshint:prod', 'concat', 'copy', 'bower_concat', 'sass:prod']);
 
 };

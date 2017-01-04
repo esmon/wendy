@@ -10,7 +10,7 @@ angular.module('wendyApp')
 
 
 	$scope.submitForm = function() {
-		console.log($scope.contactInfo);
+		
 		$scope.emailSuccess = true;
 
 		// emailApi.postEmail({email: $scope.email}).then(function(data) {
