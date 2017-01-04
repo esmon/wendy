@@ -6,7 +6,7 @@
 	"description":"<p>Description text</p>",
 	"gallery":[
 		{
-			"image": "/wendy/resources/images/tracksmith/tracksmith-web.jpg",
+			"image": "/resources/images/tracksmith/tracksmith-web.jpg",
 			"description":"<p>Ambient</p>"
 		}
 	]

@@ -8,37 +8,37 @@ pocketBetaApp.config(['$urlRouterProvider', '$locationProvider', '$stateProvider
 	$stateProvider
 	// app homepage
 	.state('home', {
-		url: '/wendy/',
-		templateUrl: '/wendy/views/home.html',
+		url: '/',
+		templateUrl: '/views/home.html',
 		controller: 'homeCtrl'
 	})
 	// work
 	.state('works', {
-		url: '/wendy/works',
-		templateUrl: '/wendy/views/works.html',
+		url: '/works',
+		templateUrl: '/views/works.html',
 		controller: 'worksCtrl'
 	})
 	// work
 	.state('work', {
-		url: '/wendy/work/:slug',
-		templateUrl: '/wendy/views/work.html',
+		url: '/work/:slug',
+		templateUrl: '/views/work.html',
 		controller: 'workCtrl'
 	})
 	// about
 	.state('about', {
-		url: '/wendy/about',
-		templateUrl: '/wendy/views/about.html',
+		url: '/about',
+		templateUrl: '/views/about.html',
 		controller: 'aboutCtrl'
 	})
 	// about
 	.state('contact', {
-		url: '/wendy/contact',
-		templateUrl: '/wendy/views/contact.html',
+		url: '/contact',
+		templateUrl: '/views/contact.html',
 		controller: 'contactCtrl'
 	})
 	// 404
 	.state('404', {
-		templateUrl: '/wendy/views/404.html',
+		templateUrl: '/views/404.html',
 	});
 
 	$urlRouterProvider.otherwise(function($injector, $location){
@@ -70,7 +70,7 @@ angular.module('wendyApp')
 
 
 	$scope.submitForm = function() {
-		console.log($scope.contactInfo);
+		
 		$scope.emailSuccess = true;
 
 		// emailApi.postEmail({email: $scope.email}).then(function(data) {
@@ -181,7 +181,7 @@ angular.module('wendyApp').directive('worksGrid',
 			works: "=works"
 		},
 		replace: true,
-		templateUrl: '/wendy/views/works-grid.html',
+		templateUrl: '/views/works-grid.html',
 		link: function(scope) {
 
 		}
@@ -191,7 +191,7 @@ angular.module('wendyApp').directive('worksGrid',
 angular.module('wendyApp').factory('wendy.api', ['$http', function($http) {
 
   function url(path) {
-    return '/wendy/resources/data/' + path + '.json';
+    return '/resources/data/' + path + '.json';
   }
 
   return {
