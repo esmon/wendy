@@ -28,7 +28,7 @@ node_modules
 resources/components
 
 # Compiled resource files
-#public
+public
 
 # Users Environment Variables
 .lock-wscript
