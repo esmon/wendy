@@ -59,6 +59,10 @@ address {
 	font-style: normal;
 }
 
+figure {
+	margin: 0;
+}
+
 .inactive {
 	opacity: 0;
 
@@ -79,4 +83,10 @@ address {
 	background-image: url(/images/404.gif);
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.wrap {
+	box-sizing: border-box;
+	max-width: 1200px;
+	margin: 0 auto
 }

@@ -2,18 +2,20 @@
 $window-height: 100vh;
 $window-width: 100vw;
 $header-height: 83px;
-$nav-padding: 35px;
+$nav-padding: 9%;
+
+// breakpoints
 $lap: 1024px;
 $lap-small: 960px;
 $palm-land: 800px; //iphone 6+ and down
 $palm-port: 414px; //iphone 6+ and down
 
+$font-size-base: 16px;
+$font-line-height: 1.5;
+
 // colors
 $c-white: #fff;
 $c-black: #000;
 $c-light-black: #333;
-$c-bg-grey: #dfe3e3;
-$c-blue: #41c6ea;
-$c-teal: #28bdb3;
-$c-green: #40ae49;
-$c-red: #ee2c3e;
+$c-bg-grey: #efefef;
+$c-teal: #2dbdb6;

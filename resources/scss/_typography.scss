@@ -1,20 +1,22 @@
 h1,
 h2,
+h3,
 h4,
 h5,
 h6 {
     text-transform: initial;
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 h1 {	
-	font-size: 50px;
-	margin-top: 0;
-	line-height: 1;
+	font-size: rem(50px);
+	margin: 0;
+	line-height: 1.18;
 }
 
 h2 {
-	font-size: 20px;
+	font-size: rem(20px);
 	letter-spacing: 0px;
 	text-align: center;
 }
@@ -28,16 +30,17 @@ h4 {
 }
 
 p {
-	font-family: 'Playfair Display', serif;
-	font-size: 16;
+	font-family: 'Poppins', serif;
+	font-size: rem(16px);
+	font-weight: 400;
 	color: $c-light-black;
 	line-height: 1.5;
 
 	a {
-		color: $c-blue;
+		color: $c-teal;
 
 		&:hover {
-			@include rollover($c-blue);
+			@include rollover($c-teal);
 		}
 	}
 
@@ -47,9 +50,9 @@ p {
 }
 
 a {
-	color: $c-blue;
+	color: $c-teal;
 
 	&:hover {
-		@include rollover($c-blue);
+		@include rollover($c-teal);
 	}
 }

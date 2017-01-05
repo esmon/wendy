@@ -2,8 +2,6 @@
 	background-color: $c-white;
 	overflow: hidden;
 	height: $header-height;
-	padding-right: $nav-padding;
-	padding-left: $nav-padding;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -39,11 +37,12 @@
 
 	a {
 		text-decoration: none;
-		font-family: 'Cabin', sans-serif;
-		font-size: 20px;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+		font-size: rem(20px);
 
 		&.is-active {
-			color: darken($c-blue, 20%);
+			color: darken($c-teal, 20%);
 		}
 	}
 }

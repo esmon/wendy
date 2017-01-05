@@ -1,5 +1,7 @@
 .work-grid {
-	margin: 0; // override flexboxgrid
+    background-color: $c-bg-grey;
+    padding-top: 40px;
+    padding-bottom: 40px;
     position: relative;
     z-index: 2;
 }
@@ -10,7 +12,7 @@
 	background-position: center;
 	color: white;
 	cursor: pointer;
-	height: 35vh;
+	height: 30vh;
     margin: 0.5rem 0;
     overflow: hidden;
     position: relative;

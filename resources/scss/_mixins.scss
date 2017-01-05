@@ -244,3 +244,7 @@
 	    -moz-column-width: $width;
 	    column-width: $width;
 }
+
+@function rem($size) {
+	@return ($size / $font-size-base) * 1rem;
+}

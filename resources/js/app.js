@@ -35,16 +35,8 @@ pocketBetaApp.config(['$urlRouterProvider', '$locationProvider', '$stateProvider
 		url: '/contact',
 		templateUrl: '/views/contact.html',
 		controller: 'contactCtrl'
-	})
-	// 404
-	.state('404', {
-		templateUrl: '/views/404.html',
 	});
 
-	$urlRouterProvider.otherwise(function($injector, $location){
-		var state = $injector.get('$state');
-		state.go('404');
-		return $location.path();
-	});
+
 
 }]);

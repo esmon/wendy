@@ -1,0 +1,33 @@
+{
+	"title":"Philips Hue",
+	"slug":"philips-hue",
+	"role":"Art Direction",
+	"image":"/resources/images/hue.jpg",
+	"description":"<p>Philips Hue Wireless lightbulb are wireless lightbulbs that can be controlled by your phone. Through your phone, you can select from 16 million colours to suit any mood or to the cadence of your music. Targeting innovators, the campaign positions the lightbulbs as an ingredient to your life at home. Philips Hue Lightbulbs enhances and enriches your home because they are completely customizeable to your mood.</p>",
+	"gallery":[
+		{
+			"image":"resources/images/Hue/hue-web3.jpg",
+			"description":"<p>OOH</p>"
+		},
+		{
+			"image":"resources/images/Hue/hue-web2.jpg",
+			"description":"<p>OOH</p>"
+		},
+		{
+			"image":"resources/images/Hue/Billboard.jpg",
+			"description":"<p>OOH</p>"
+		},
+		{
+			"image":"resources/images/Hue/hue-web.jpg",
+			"description":"<p>Interactive</p>"
+		},
+		{
+			"video":"https://www.youtube.com/embed/EZUOHiiBV_g",
+			"description":"<p>Interactive: The Philips Hue is an OOH campaign. Billboards throughout the city will illuminate different moods demonstrating the use of ambient lighting for specific moods and circumstances. In select medium-traffic transit shelters, people will have the opportunity to interact with the billboards. By directly going to a website, they can engage in real-time with the billboard by select colours.</p>"
+		},
+		{
+			"video":"https://www.youtube.com/embed/2rBApTdwvOQ",
+			"description":"<p>Experiential</p>"
+		}
+	]
+}
