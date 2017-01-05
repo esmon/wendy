@@ -1,20 +1,22 @@
-<aside class="work-meta">
-	<h1>{{ work.title }}</h1>
-	<article dynamic-html markup="work.description"></article>
-</aside>
+<section class="wrap container-fluid">
+	<aside class="work-meta">
+		<h1>{{ work.title }}</h1>
+		<article dynamic-html markup="work.description"></article>
+	</aside>
 
-<section class="work-gallery">
-	<figure ng-repeat="work in work.gallery" class="work-gallery__item">
-		<img src="{{ work.image }}"  alt="" ng-if="work.image" class="work-gallery__img">
-		<iframe class="work__video" width="640" height="480" ng-src="{{ work.video | trustAsResourceUrl }}" frameborder="0" allowfullscreen ng-if="work.video"></iframe>
-		<figcaption dynamic-html markup="work.description"></figcaption>
-	</figure>
-	
+	<section class="work-gallery">
+		<figure ng-repeat="work in work.gallery" class="work-gallery__item">
+			<img src="{{ work.image }}"  alt="" ng-if="work.image" class="work-gallery__img">
+			<iframe class="work__video" width="640" height="480" ng-src="{{ work.video | trustAsResourceUrl }}" frameborder="0" allowfullscreen ng-if="work.video"></iframe>
+			<figcaption dynamic-html markup="work.description"></figcaption>
+		</figure>
+		
+	</section>
+
+	<aside class="work-nav">
+		<a ng-if="neighbours.previous.slug" ng-href="/work/{{ neighbours.previous.slug }}">prev</a>
+		<a ng-if="neighbours.next.slug" ng-href="/work/{{ neighbours.next.slug }}">next</a>
+	</aside>
+
+	<div works-grid works="works"></div>
 </section>
-
-<aside class="work-nav">
-	<a ng-if="neighbours.previous.slug" ng-href="/work/{{ neighbours.previous.slug }}">prev</a>
-	<a ng-if="neighbours.next.slug" ng-href="/work/{{ neighbours.next.slug }}">next</a>
-</aside>
-
-<div works-grid works="works"></div>

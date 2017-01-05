@@ -4,13 +4,30 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta charset="utf-8">
 
-		<title>Wendy La | Art Direction</title>
+		<title>Wendy La | Art Direction </title>
 		<meta name="description" content="{{ meta.description }}">
 		<meta name="author" content="Wendy La">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
-		<link href="https://fonts.googleapis.com/css?family=Cabin:400,700|Playfair+Display:400,700" rel="stylesheet">
+		<link rel="apple-touch-icon" sizes="57x57" href="/wendy/resources/images/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/wendy/resources/images/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/wendy/resources/images/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/wendy/resources/images/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/wendy/resources/images/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/wendy/resources/images/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/wendy/resources/images/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/wendy/resources/images/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/wendy/resources/images/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/wendy/resources/images/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/wendy/resources/images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/wendy/resources/images/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/wendy/resources/images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/wendy/resources/images/favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/wendy/resources/images/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 		<link rel="stylesheet" href="/wendy/resources/css/flexboxgrid.min.css" type="text/css">
 		<link rel="stylesheet" href="/wendy/resources/css/main.css" type="text/css">
 		<base href="/wendy/">
@@ -18,24 +35,26 @@
 
 	<body ng-controller="masterCtrl">
 		<nav class="nav-container">
-			<a ui-sref="home" class="logo">
-				<img src="/wendy/resources/images/logo.png" alt="logo">
-			</a>
-			
-			<ul class="nav-content-container">
-				<li class="nav-content">
-					<a ui-sref="works" ng-class="{'is-active': navState === 'works'}">Work</a>
-				</li>
-				<li class="nav-content">
-					<a ui-sref="about" ng-class="{'is-active': navState === 'about'}">About</a>
-				</li>
-				<li class="nav-content">
-					<a href="/wendy/resources/wendy_la_resume.pdf" target="_blank">Resumé</a>
-				</li>
-				<li class="nav-content">
-					<a ui-sref="contact" ng-class="{'is-active': navState === 'contact'}">Contact</a>
-				</li>
-			</ul>
+			<section class="wrap container-fluid">
+				<a ui-sref="home" class="logo">
+					<img src="/wendy/resources/images/logo.png" alt="logo">
+				</a>
+				
+				<ul class="nav-content-container">
+					<li class="nav-content">
+						<a ui-sref="works" ng-class="{'is-active': navState === 'works'}">Work</a>
+					</li>
+					<li class="nav-content">
+						<a ui-sref="about" ng-class="{'is-active': navState === 'about'}">About</a>
+					</li>
+					<li class="nav-content">
+						<a href="/wendy/resources/wendy_la_resume.pdf" target="_blank">Resumé</a>
+					</li>
+					<li class="nav-content">
+						<a ui-sref="contact" ng-class="{'is-active': navState === 'contact'}">Contact</a>
+					</li>
+				</ul>
+			</section>
 		</nav>
 
 		<main class="main-container" ng-cloak>

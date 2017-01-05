@@ -16,18 +16,6 @@
 		{
 			"image":"/wendy/resources/images/tracksmith/tracksmith-web3.jpg",
 			"description":"<p>Print</p>"
-		},
-		{
-			"image":"/wendy/resources/images/tracksmith/ambient-start.jpg",
-			"description":"<p>Ambient</p>"
-		},
-		{
-			"image":"/wendy/resources/images/tracksmith/ambient-finish.jpg",
-			"description":"<p>Ambient</p>"
-		},
-		{
-			"image":"/wendy/resources/images/tracksmith/ambient-10.jpg",
-			"description":"<p>Ambient</p>"
 		}
 	]
 }

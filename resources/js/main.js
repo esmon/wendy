@@ -35,17 +35,9 @@ pocketBetaApp.config(['$urlRouterProvider', '$locationProvider', '$stateProvider
 		url: '/contact',
 		templateUrl: '/wendy/views/contact.html',
 		controller: 'contactCtrl'
-	})
-	// 404
-	.state('404', {
-		templateUrl: '/wendy/views/404.html',
 	});
 
-	$urlRouterProvider.otherwise(function($injector, $location){
-		var state = $injector.get('$state');
-		state.go('404');
-		return $location.path();
-	});
+
 
 }]);
 angular.module('wendyApp')
