@@ -37,8 +37,6 @@ pocketBetaApp.config(['$urlRouterProvider', '$locationProvider', '$stateProvider
 		controller: 'contactCtrl'
 	});
 
-
-
 }]);
 angular.module('wendyApp')
 .controller('aboutCtrl', ['$scope', 'wendy.api', function ($scope, aboutApi) {
@@ -94,8 +92,19 @@ angular.module('wendyApp')
 
 	  $scope.navState = $state.current.name;
 
-	  // console.log($scope.navState);
 	});
+
+	$scope.mobileMenuToggle = function() {
+		var navContainer = document.body;
+		navContainer.classList.toggle('menu-is-active');
+	};
+
+	$scope.hideMobileNav = function() {
+		var navContainer = document.body;
+		if (navContainer.classList.contains('menu-is-active')) {
+			navContainer.classList.remove('menu-is-active');
+		}
+	};
 
 }]);
 

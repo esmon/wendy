@@ -37,6 +37,4 @@ pocketBetaApp.config(['$urlRouterProvider', '$locationProvider', '$stateProvider
 		controller: 'contactCtrl'
 	});
 
-
-
 }]);

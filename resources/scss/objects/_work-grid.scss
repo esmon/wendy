@@ -7,12 +7,8 @@
 }
 
 .work-content {
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
 	color: white;
 	cursor: pointer;
-	height: 30vh;
     margin: 0.5rem 0;
     overflow: hidden;
     position: relative;
@@ -37,7 +33,7 @@
     &:hover {
     	.work-description {
     		opacity: 1;
-            @include translate3d(0, 0, 0);
+            @include translate3d(0, 40%, 0);
     	}
 
         &::before {
@@ -46,44 +42,55 @@
     }
 }
 
+.work-grid__image {
+    width: 100%;
+}
+
 .work-description {
 	color: $c-white;
 	opacity: 0;
 	text-align: center;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: 1;
     @include transition-property(all);
     @include transition-transform(.35s);
-    @include translate3d(0, 8%, 0);
+    @include translate3d(0, 45%, 0);
 }
 
 
 // mobiles sizes
+@media screen and (max-width: $lap) {
+    .work-grid {
+        padding-top: 30px;
+    }
+}
+
 @media screen and (max-width: $palm-land) {
     .work-content {
-        height: 28vh;
-
-        @include flex-justify-content(flex-end);
 
         &::before {
+            height: 70px;
             opacity: .7;
-            top: 55%;
+            top: initial;
+            bottom: 0;
         }
     }
 
     .work-description {
+        height: 70px;
         opacity: 1;
+        padding-left: 15px;
+        padding-top: 10px;
         text-align: left;
+        top: initial;
+        bottom: 0;
         @include translate3d(0, 0, 0);
     }
 }
 
 @media screen and (max-width: $palm-port) {
-	.work-content {
-		height: 45vh;
-
-        &::before {
-            top: 69%;
-        }
-	}
 }

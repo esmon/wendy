@@ -1,0 +1,20 @@
+{
+	"title":"Lifting the veil",
+	"slug":"lifting-the-veil",
+	"role":"Art Direction",
+	"description":"<p>lifting-the-veil blurb</p>",
+	"gallery": [
+		{
+			"image":"/resources/images/works/lifting-the-veil/ltv-poster.jpg",
+			"description":"<p>web</p>"
+		},
+		{
+			"image":"/resources/images/works/lifting-the-veil/ltv-poster-in-frame.jpg",
+			"description":"<p>print</p>"
+		},
+		{
+			"image":"/resources/images/works/lifting-the-veil/ltv-socialmedia.jpg",
+			"description":"<p>social media</p>"
+		}
+	]
+}

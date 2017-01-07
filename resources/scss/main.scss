@@ -63,30 +63,35 @@ figure {
 	margin: 0;
 }
 
-.inactive {
-	opacity: 0;
-
-	@include transition-transform(0.35s);
-	@include translate3d(0, 40%, 0);
-	@include transition-property(all);
-}
-
-.is-active {
-	opacity: 1;
-
-	@include transition-transform(0.35s);
-	@include translate3d(0, 0, 0);
-	@include transition-property(all);
-}
-
-.fourohfour {
-	background-image: url(/images/404.gif);
-	background-repeat: no-repeat;
-	background-size: cover;
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
 }
 
 .wrap {
 	box-sizing: border-box;
 	max-width: 1200px;
-	margin: 0 auto
+	margin: 0 auto;
+	@include clearfix;
+}
+
+.menu-is-active {
+	overflow: hidden;
+	
+	.nav-content-container {
+		@include translate3d(0, 0, 0);
+	}
+
+	.menu-burger {
+		background-color: transparent;
+
+		&::before {
+			@include rotate(45deg);
+			top: 0; 
+		}
+
+		&::after {
+			@include rotate(-45deg);
+			bottom: 0; 
+		}
+	}
 }

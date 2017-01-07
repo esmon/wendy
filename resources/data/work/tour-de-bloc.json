@@ -1,0 +1,20 @@
+{
+	"title":"Tour De Bloc",
+	"slug":"tour-de-bloc",
+	"role":"Art Direction",
+	"description":"<p>Tour de bloc blurb</p>",
+	"gallery": [
+		{
+			"image":"/resources/images/works/tour-de-bloc/tdb-poster-frame.jpg",
+			"description":"<p>print</p>"
+		},
+		{
+			"image":"/resources/images/works/tour-de-bloc/tdb-poster.jpg",
+			"description":"<p>print</p>"
+		},
+		{
+			"image":"/resources/images/works/tour-de-bloc/tdb-socialmedia-fb.jpg",
+			"description":"<p>print</p>"
+		}
+	]
+}

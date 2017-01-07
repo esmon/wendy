@@ -29,10 +29,14 @@ h4 {
 
 }
 
-p {
+p,
+span {
 	font-family: 'Poppins', serif;
 	font-size: rem(16px);
 	font-weight: 400;
+}
+
+p {
 	color: $c-light-black;
 	line-height: 1.5;
 

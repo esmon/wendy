@@ -2,19 +2,18 @@
 	"title":"Tracksmith",
 	"slug":"tracksmith",
 	"role":"Art Direction",
-	"image":"/resources/images/tracksmith.jpg",
 	"description":"<p>Tracksmith is a brand dedicated to the all-year-round runner. The brand harks back to the collegiate athlete who is methodical, conscientious and passionate about running. The campaign positions itself as a premium active wear for both the elite runners and running nerds.</p><p>For the ambient execution, Tracksmith will take over a portion of a highway and make it feel like a marathon.</p>",
 	"gallery": [
 		{
-			"image":"resources/images/tracksmith/tracksmith-web.jpg",
+			"image":"/resources/images/works/tracksmith/tracksmith.jpg",
 			"description":"<p>Print</p>"
 		},
 		{
-			"image":"resources/images/tracksmith/tracksmith-web2.jpg",
+			"image":"/resources/images/works/tracksmith/tracksmith.jpg",
 			"description":"<p>Print</p>"
 		},
 		{
-			"image":"resources/images/tracksmith/tracksmith-web3.jpg",
+			"image":"/resources/images/works/tracksmith/tracksmith-magazine.jpg",
 			"description":"<p>Print</p>"
 		}
 	]
