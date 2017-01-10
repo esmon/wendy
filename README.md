@@ -6,7 +6,7 @@
 * [Bower](http://bower.io/)
 * [Grunt](http://gruntjs.com/getting-started)
 * [Sass](http://sass-lang.com/install)
-* [Nginx](https://www.nginx.com/resources/wiki/) 
+* [Nginx](https://www.nginx.com/resources/wiki/)
 * [Firebase Tools](https://www.firebase.com/docs/hosting/)
 
 ### Setting up nginx locally
