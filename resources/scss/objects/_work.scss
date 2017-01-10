@@ -1,8 +1,13 @@
 .work-meta {
+	margin-top: 60px;
 	position: fixed;
 	-webkit-backface-visibility: hidden;
 	width: 300px;
 	z-index: 0;
+}
+
+.work-meta__title {
+	font-size: rem(30px);
 }
 
 .work-gallery {
@@ -12,13 +17,11 @@
 }
 
 .work-gallery__item {
-	margin-left: 0;
-	margin-right: 0;
+	margin: 0 0 rem(30px) 0;
 }
 
 .work-gallery__img {
 	width: 100%;
-	@include box-shadow(0 1px 4px 0 rgba(0,0,0,0.37));
 }
 
 .work-nav {

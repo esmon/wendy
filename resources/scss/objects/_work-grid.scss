@@ -33,7 +33,7 @@
     &:hover {
     	.work-description {
     		opacity: 1;
-            @include translate3d(0, 40%, 0);
+            @include translate3d(0, 45%, 0);
     	}
 
         &::before {
@@ -58,7 +58,7 @@
     z-index: 1;
     @include transition-property(all);
     @include transition-transform(.35s);
-    @include translate3d(0, 45%, 0);
+    @include translate3d(0, 50%, 0);
 }
 
 

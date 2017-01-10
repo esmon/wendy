@@ -2,27 +2,31 @@
 	"title":"Starbucks",
 	"slug":"starbucks",
 	"role":"Art Direction",
-	"description":"<p>The Starbucks Mobile Order and Pay is a new feature on the My Starbucks Rewards app that allows you to pre-order your drink on your phone to any Starbucks location. When you arrive in store, your food and/or beverage is ready and waiting for you with your name on it. The campaign execution personifies the mobile app as a pocket barista that goes where you go.</p><p>Art Director: Wendy La, <a href=\"https://willcuthbert.com\">Art Director: Will Cuthbert</a></p>",
+	"description":"<p>For the summer 2016 campaign, Starbucks wanted to target millennials and push the the Mobile Order & Pay feature of their app. To help present the benefits of this feature, we personified the app in a quirk way that would speak to the target through the pocket barista.</p><p>My role: Art Direction, photography, and copywriting.</p><p>Worked with Art Director: <a href=\"https://willcuthbert.com\">Will Cuthbert</a></p>",
 	"gallery":[
 		{
-			"image":"/resources/images/works/starbucks/starbucks.jpg",
-			"description":"<p>OOH</p>"
+			"image":"/resources/images/works/starbucks/starbucks-1.jpg"
 		},
 		{
-			"image":"/resources/images/works/starbucks/starbucks2.jpg",
-			"description":"<p>OOH</p>"
+			"image":"/resources/images/works/starbucks/starbucks-2.jpg"
 		},
 		{
-			"image":"/resources/images/works/starbucks/starbucks-subway-ad.jpg",
-			"description":"<p>Ambient/Subway Takeover.</p>"
+			"image":"/resources/images/works/starbucks/starbucks-3.jpg"
 		},
 		{
-			"image":"/resources/images/works/starbucks/starbucks-ig-post-1.jpg",
-			"description":"<p>Social Media<br>A further extension of the OOH campaign, sponsored Instagram posts will point out the major conveniences of the MOP feature within the app using additional visuals of the pocket barista. In these ads we will speak to millennials in a cheeky relatable tone of voice that reflects their sense of humour.</p>"
+			"image":"/resources/images/works/starbucks/starbucks-4.jpg"
 		},
 		{
-			"image":"/resources/images/works/starbucks/starbucks-ig-post-2.jpg",
-			"description":"<p>Social Media</p>"
+			"image":"/resources/images/works/starbucks/starbucks-5.jpg"
+		},
+		{
+			"image":"/resources/images/works/starbucks/starbucks-6.jpg"
+		},
+		{
+			"image":"/resources/images/works/starbucks/starbucks-7.jpg"
+		},
+		{
+			"image":"/resources/images/works/starbucks/starbucks-8.jpg"
 		}
 	]
 }

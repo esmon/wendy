@@ -1,51 +1,65 @@
 [
 	{
-		"title":"Lifting the veil",
-		"slug":"lifting-the-veil",
-		"role":"Art Direction",
-		"imageDesc": "Woman with hands raised over her head doing yoga",
-		"image":"/resources/images/thumbnails/lifting-the-veil.jpg"	
-	},
-	{
-		"title":"Town Moto",
-		"slug":"town-moto",
+		"title":"Town Moto - Designer",
+		"slug":"town-moto-ad",
 		"role":"Digital Designer",
-		"imageDesc": "A leg on a footpeg on a motorcycle",
-		"image":"/resources/images/thumbnails/town-moto.jpg"	
+		"imageDesc": "A leg on a footpeg on a motorcycle.",
+		"image":"/resources/images/thumbnails/townmoto-ad.jpg"	
 	},
 	{
 		"title":"Tour De Bloc",
 		"slug":"tour-de-bloc",
-		"role":"Art Direction",
-		"imageDesc": "A woman rock climbing",
+		"imageDesc": "A woman rock climbing.",
 		"image":"/resources/images/thumbnails/tour-de-bloc.jpg"	
 	},
 	{
-		"title":"Migrant Offshore Aid Station",
+		"title":"Migrant Offshore Aid Station - Spec",
 		"slug":"migrant-offshore-aid-station",
-		"role":"Art Direction",
-		"imageDesc": "Refugee child crying on a shore",
+		"imageDesc": "Refugee child crying on a shore.",
 		"image":"/resources/images/thumbnails/moas.jpg"
 	},
 	{
-		"title":"Starbucks",
+		"title":"Starbucks - Spec",
 		"slug":"starbucks",
-		"role":"Art Direction",
-		"imageDesc": "A small barista cheersing a customer with their coffee cup",
+		"imageDesc": "A small barista cheersing a customer with their coffee cup.",
 		"image":"/resources/images/thumbnails/starbucks.jpg"
 	},
 	{
-		"title":"Tracksmith",
+		"title":"Lifting the veil",
+		"slug":"lifting-the-veil",
+		"imageDesc": "Woman with hands raised over her head doing yoga.",
+		"image":"/resources/images/thumbnails/lifting-the-veil.jpg"	
+	},
+	{
+		"title":"Town Moto - Brand Manager",
+		"slug":"town-moto-bm",
+		"role":"Digital Designer",
+		"imageDesc": "A man on a motorcycle with his foot on the ground waiting.",
+		"image":"/resources/images/thumbnails/townmoto-bm.jpg"	
+	},
+
+	{
+		"title":"Tracksmith - Spec",
 		"slug":"tracksmith",
-		"role":"Art Direction",
-		"imageDesc": "A woman running",
+		"imageDesc": "A woman sprinting forward.",
 		"image":"/resources/images/thumbnails/tracksmith.jpg"
 	},
 	{
-		"title":"Levi's",
+		"title":"Levi's - Spec",
 		"slug":"levis",
-		"role":"Art Direction",
-		"imageDesc": "A man cycling with elongated shadow",
+		"imageDesc": "A man cycling with elongated shadow.",
 		"image":"/resources/images/thumbnails/levis.jpg"	
+	},
+	{
+		"title":"Logo & rebranding",
+		"slug":"logo-rebranding",
+		"imageDesc": "WL logo",
+		"image":"/resources/images/thumbnails/logo-rebranding.jpg"	
+	},
+	{
+		"title":"Personal Work",
+		"slug":"personal-work",
+		"imageDesc": "WL logo",
+		"image":"/resources/images/thumbnails/personal-work.jpg"	
 	}
 ]

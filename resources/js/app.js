@@ -1,9 +1,10 @@
-var pocketBetaApp = angular.module('wendyApp', [
+var wendyApp = angular.module('wendyApp', [
 	'ui.router'
 ]);
 
-pocketBetaApp.config(['$urlRouterProvider', '$locationProvider', '$stateProvider', function($urlRouterProvider, $locationProvider, $stateProvider) {
-	$locationProvider.html5Mode(true);
+wendyApp.config(['$urlRouterProvider', '$locationProvider', '$stateProvider', function($urlRouterProvider, $locationProvider, $stateProvider) {
+	$urlRouterProvider.otherwise('/');
+    $locationProvider.html5Mode(true);
 
 	$stateProvider
 	// app homepage
@@ -35,6 +36,17 @@ pocketBetaApp.config(['$urlRouterProvider', '$locationProvider', '$stateProvider
 		url: '/contact',
 		templateUrl: '/views/contact.html',
 		controller: 'contactCtrl'
+	})
+
+	// 404
+	.state('404', {
+		template: '<div>error</div>',
+	});
+
+	$urlRouterProvider.otherwise(function($injector, $location){
+		var state = $injector.get('$state');
+		state.go('404');
+		return $location.path();
 	});
 
 }]);

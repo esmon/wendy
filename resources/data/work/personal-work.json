@@ -1,0 +1,12 @@
+{
+	"title":"Personal Work",
+	"description":"",
+	"gallery": [
+		{
+			"image":"/resources/images/works/personal-work/mjd_invitation.gif"
+		},
+		{
+			"image":"/resources/images/works/personal-work/playing-cards.jpg"
+		}
+	]
+}
