@@ -1,0 +1,20 @@
+{
+	"title":"Tour De Bloc",
+	"slug":"tour-de-bloc",
+	"role":"Art Direction",
+	"description":"<p>Since 2003, Tour de Bloc is one Canada’s oldest rock climbing competition promoting competitive bouldering. From concept to art direction, I was responsible for the photography, design and execution for the 14th annual competition’s marketing collateral.</p><p>My role: Art Direction, photography, social media and website design.</p>",
+	"gallery": [
+		{
+			"image":"/resources/images/works/tour-de-bloc/tdb-1.jpg"
+		},
+		{
+			"image":"/resources/images/works/tour-de-bloc/tdb-2.jpg"
+		},
+		{
+			"image":"/resources/images/works/tour-de-bloc/tdb-3.gif"
+		},
+		{
+			"image":"/resources/images/works/tour-de-bloc/tdb-4.jpg"
+		}
+	]
+}

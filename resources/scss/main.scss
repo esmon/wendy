@@ -1,0 +1,97 @@
+@import "variables";
+@import "mixins";
+@import "animation";
+@import "typography";
+
+// layout
+@import "app";
+@import "view-container";
+@import "about";
+
+// Objects
+@import "objects/nav";
+@import "objects/hero";
+@import "objects/work-grid";
+@import "objects/work";
+@import "objects/contact";
+
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+  	-webkit-font-smoothing: antialiased; // makes the fonts less chunky - seems to be only available with the webkit prefix.
+ 	text-rendering: optimizeLegibility;
+}
+
+html {
+	font-size: 1em;
+	-webkit-text-size-adjust: 1em; /* 2 */
+	-ms-text-size-adjust: 1em;
+}
+
+html, body {
+	margin: 0;
+}
+
+img {
+	border: none;
+}
+
+body {
+	background-color: $c-bg-grey;
+	color: $c-black;
+	position: relative;
+
+	@media screen and (max-width: $palm-land) {
+		margin: 0;
+		width: 100%;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+*[contenteditable], button {
+	outline: none;
+}
+
+address {
+	font-style: normal;
+}
+
+figure {
+	margin: 0;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+
+.wrap {
+	box-sizing: border-box;
+	max-width: 1200px;
+	margin: 0 auto;
+	@include clearfix;
+}
+
+.menu-is-active {
+	overflow: hidden;
+	
+	.nav-content-container {
+		@include translate3d(0, 0, 0);
+	}
+
+	.menu-burger {
+		background-color: transparent;
+
+		&::before {
+			@include rotate(45deg);
+			top: 0; 
+		}
+
+		&::after {
+			@include rotate(-45deg);
+			bottom: 0; 
+		}
+	}
+}

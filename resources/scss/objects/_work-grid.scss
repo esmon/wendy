@@ -1,0 +1,96 @@
+.work-grid {
+    background-color: $c-bg-grey;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.work-content {
+	color: white;
+	cursor: pointer;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    position: relative;
+
+    @include flexbox-vertical-center;
+
+    &::before {
+        background-color: $c-black;
+        content: '';
+        opacity: 0;
+    	position: absolute;
+    	top: 0;
+    	right: 0;
+    	bottom: 0;
+    	left: 0;
+        z-index: 0;
+        @include transition-property(all);
+        @include transition-transform(.35s);
+        @include translate3d(0, 0, 0);
+    }
+
+    &:hover {
+    	.work-description {
+    		opacity: 1;
+            @include translate3d(0, 45%, 0);
+    	}
+
+        &::before {
+            opacity: .7;
+        }
+    }
+}
+
+.work-grid__image {
+    width: 100%;
+}
+
+.work-description {
+	color: $c-white;
+	opacity: 0;
+	text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    @include transition-property(all);
+    @include transition-transform(.35s);
+    @include translate3d(0, 50%, 0);
+}
+
+
+// mobiles sizes
+@media screen and (max-width: $lap) {
+    .work-grid {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: $palm-land) {
+    .work-content {
+
+        &::before {
+            height: 70px;
+            opacity: .7;
+            top: initial;
+            bottom: 0;
+        }
+    }
+
+    .work-description {
+        height: 70px;
+        opacity: 1;
+        padding-left: 15px;
+        padding-top: 10px;
+        text-align: left;
+        top: initial;
+        bottom: 0;
+        @include translate3d(0, 0, 0);
+    }
+}
+
+@media screen and (max-width: $palm-port) {
+}

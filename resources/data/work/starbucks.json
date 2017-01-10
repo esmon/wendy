@@ -1,0 +1,32 @@
+{
+	"title":"Starbucks",
+	"slug":"starbucks",
+	"role":"Art Direction",
+	"description":"<p>For the summer 2016 campaign, Starbucks wanted to target millennials and push the the Mobile Order & Pay feature of their app. To help present the benefits of this feature, we personified the app in a quirk way that would speak to the target through the pocket barista.</p><p>My role: Art Direction, photography, and copywriting.</p><p>Worked with Art Director: <a href=\"https://willcuthbert.com\">Will Cuthbert</a></p>",
+	"gallery":[
+		{
+			"image":"/resources/images/works/starbucks/starbucks-1.jpg"
+		},
+		{
+			"image":"/resources/images/works/starbucks/starbucks-2.jpg"
+		},
+		{
+			"image":"/resources/images/works/starbucks/starbucks-3.jpg"
+		},
+		{
+			"image":"/resources/images/works/starbucks/starbucks-4.jpg"
+		},
+		{
+			"image":"/resources/images/works/starbucks/starbucks-5.jpg"
+		},
+		{
+			"image":"/resources/images/works/starbucks/starbucks-6.jpg"
+		},
+		{
+			"image":"/resources/images/works/starbucks/starbucks-7.jpg"
+		},
+		{
+			"image":"/resources/images/works/starbucks/starbucks-8.jpg"
+		}
+	]
+}

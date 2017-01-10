@@ -1,0 +1,15 @@
+.main-container {
+	overflow: hidden;
+	margin: 0;
+	padding-top: $header-height;
+	position: relative;
+}
+
+
+// mobiles sizes
+@media screen and (max-width: $lap) {
+
+}
+
+@media screen and (max-width: $palm-land) {
+}

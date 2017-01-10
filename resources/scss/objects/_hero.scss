@@ -1,0 +1,31 @@
+.hero {
+	color: $c-white;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+.hero__headline {
+	font-size: rem(100px);
+	margin: 0;
+}
+
+.hero__subhead {
+	color: $c-white;
+	
+}
+
+// mobiles sizes
+@media screen and (max-width: $lap) {
+	.hero__headline {
+		font-size: 80px;
+	}
+}
+
+@media screen and (max-width: $palm-land) {
+}
+
+@media screen and (max-width: $palm-port) {
+	.hero__headline {
+		font-size: 50px;
+	}
+}
