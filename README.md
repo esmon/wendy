@@ -1,4 +1,4 @@
-# Pocket Beta
+# Wendy
 
 ### Requirments:
 

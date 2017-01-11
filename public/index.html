@@ -34,7 +34,7 @@
 	</head>
 
 	<body ng-controller="masterCtrl">
-		<nav class="nav-container">
+		<nav class="nav-container" ng-cloak>
 			<section class="wrap container-fluid">
 				<a ui-sref="home" class="logo" ng-click="hideMobileNav()">
 					<img src="/resources/images/logo.png" alt="Wendy La logo">
@@ -65,7 +65,7 @@
 
 		</main>
 
-		<footer class="footer__container">
+		<footer class="footer__container" ng-cloak>
 			<section class="wrap container-fluid">
 				<div class="row">
 					<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
@@ -85,6 +85,17 @@
 
 		<script rel="preload" src="/resources/js/vendor.js" as="script"></script>
 		<script rel="preload" src="/resources/js/main.js" as="script"></script>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-90164915-1', 'auto');
+			ga('send', 'pageview');
+
+		</script>
 
 	</body>
 </html>
