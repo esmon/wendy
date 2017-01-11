@@ -9,15 +9,18 @@ h6 {
     font-weight: 600;
 }
 
-h1 {
+h1,
+.heading-1 {
 	font-size: rem(50px);
 	margin: 0;
 	line-height: 1.18;
 }
 
-h2 {
-	font-size: rem(20px);
+h2,
+.heading-2 {
+	font-size: rem(22px);
 	letter-spacing: 0px;
+	margin-top: 0;
 }
 
 h3 {

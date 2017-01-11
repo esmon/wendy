@@ -1,0 +1,23 @@
+.footer__container {
+	background-color: $c-blue;
+	color: $c-white;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	position: relative;
+	z-index: 3
+}
+
+.footer__heading {
+	font-size: rem(30px);
+	margin: 0;
+}
+
+.footer__copy {
+	color: $c-white;
+}
+
+.footer__link {
+	color: $c-white;
+	text-decoration: underline;
+
+}

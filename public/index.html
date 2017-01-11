@@ -39,7 +39,7 @@
 				<a ui-sref="home" class="logo" ng-click="hideMobileNav()">
 					<img src="/resources/images/logo.png" alt="Wendy La logo">
 				</a>
-
+				
 				<ul class="nav-content-container">
 					<li class="nav-content">
 						<a ui-sref="works" ng-class="{'is-active': navState === 'works'}" ng-click="hideMobileNav()">Work</a>
@@ -50,7 +50,7 @@
 					<li class="nav-content">
 						<a href="/resources/wla_resume.pdf" target="_blank" ng-click="hideMobileNav()">CV</a>
 					</li>
-					<!-- <li class="nav-content">
+<!-- 					<li class="nav-content">
 						<a ui-sref="contact" ng-class="{'is-active': navState === 'contact'}" ng-click="hideMobileNav()">Contact</a>
 					</li> -->
 				</ul>
@@ -64,6 +64,24 @@
 			<section ui-view ng-cloak ng-class="{'view-container--home': navState === 'home'}" class="view-container"></section>
 
 		</main>
+
+		<footer class="footer__container">
+			<section class="wrap container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
+						<h3 class="footer__heading">Hey! Thanks for visiting.</h3>
+						<p class="footer__copy">Want to know more? Have more questions? Want to collaborate?! I’m always looking for fun and new ideas. Let’s chat.</p>
+					</div>
+					<div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+						<h3 class="footer__heading">Say what’s up!</h3>
+						<p class="footer__copy">Email: wendylaurala@gmail.com<br>
+							<a href="https://ca.linkedin.com/in/wendy-la-32a2b961" class="footer__link">LinkedIn</a><br>
+							<a href="https://instagram.com/wendemis" class="footer__link">Instagram</a>
+						</p>
+					</div>
+				</div>
+			</section>
+		</footer>
 
 		<script rel="preload" src="/resources/js/vendor.js" as="script"></script>
 		<script rel="preload" src="/resources/js/main.js" as="script"></script>
