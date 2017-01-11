@@ -4,16 +4,16 @@
 		"slug":"town-moto-ad",
 		"role":"Digital Designer",
 		"imageDesc": "A leg on a footpeg on a motorcycle.",
-		"image":"/resources/images/thumbnails/townmoto-ad.jpg"	
+		"image":"/resources/images/thumbnails/townmoto-ad.jpg"
 	},
 	{
 		"title":"Tour De Bloc",
 		"slug":"tour-de-bloc",
 		"imageDesc": "A woman rock climbing.",
-		"image":"/resources/images/thumbnails/tour-de-bloc.jpg"	
+		"image":"/resources/images/thumbnails/tour-de-bloc.jpg"
 	},
 	{
-		"title":"Migrant Offshore Aid Station - Spec",
+		"title":"MOAS",
 		"slug":"migrant-offshore-aid-station",
 		"imageDesc": "Refugee child crying on a shore.",
 		"image":"/resources/images/thumbnails/moas.jpg"
@@ -28,14 +28,14 @@
 		"title":"Lifting the veil",
 		"slug":"lifting-the-veil",
 		"imageDesc": "Woman with hands raised over her head doing yoga.",
-		"image":"/resources/images/thumbnails/lifting-the-veil.jpg"	
+		"image":"/resources/images/thumbnails/lifting-the-veil.jpg"
 	},
 	{
 		"title":"Town Moto - Brand Manager",
 		"slug":"town-moto-bm",
 		"role":"Digital Designer",
 		"imageDesc": "A man on a motorcycle with his foot on the ground waiting.",
-		"image":"/resources/images/thumbnails/townmoto-bm.jpg"	
+		"image":"/resources/images/thumbnails/townmoto-bm.jpg"
 	},
 
 	{
@@ -48,18 +48,18 @@
 		"title":"Levi's - Spec",
 		"slug":"levis",
 		"imageDesc": "A man cycling with elongated shadow.",
-		"image":"/resources/images/thumbnails/levis.jpg"	
+		"image":"/resources/images/thumbnails/levis.jpg"
 	},
 	{
 		"title":"Logo & rebranding",
 		"slug":"logo-rebranding",
 		"imageDesc": "WL logo",
-		"image":"/resources/images/thumbnails/logo-rebranding.jpg"	
+		"image":"/resources/images/thumbnails/logo-rebranding.jpg"
 	},
 	{
 		"title":"Personal Work",
 		"slug":"personal-work",
 		"imageDesc": "WL logo",
-		"image":"/resources/images/thumbnails/personal-work.jpg"	
+		"image":"/resources/images/thumbnails/personal-work.jpg"
 	}
 ]

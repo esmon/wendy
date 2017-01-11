@@ -20,13 +20,15 @@
 			"image":"/resources/images/works/starbucks/starbucks-5.jpg"
 		},
 		{
-			"image":"/resources/images/works/starbucks/starbucks-6.jpg"
+			"image":"/resources/images/works/starbucks/starbucks-6.jpg",
+			"description": "<p>Using a simple plastic prism, the pocket barista comes to life within the Starbucks app. On the Mobile Order & Pay screen, a hologram video of the pocket barista will play on the customer’s phone, walking them through the ordering process. Prisms will br distributed in store and via direct mail.</p>"
 		},
 		{
 			"image":"/resources/images/works/starbucks/starbucks-7.jpg"
 		},
 		{
-			"image":"/resources/images/works/starbucks/starbucks-8.jpg"
+			"image":"/resources/images/works/starbucks/starbucks-8.jpg",
+			"description": "<p>OOH/Ambient</p><p>A persistent image sequence of posters will be placed at specific locations inside the TTC subway tunnel leading up to spots along the lines where cell service or wifi becomes available. When the train reaches an area with service, another poster will tell them to ‘Order Now!’ When they order, their beverage will be ready when they arrive to the nearest Starbucks location upon exiting.</p>"
 		}
 	]
 }
