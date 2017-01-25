@@ -78,6 +78,13 @@
             top: initial;
             bottom: 0;
         }
+
+        &:hover {
+            .work-description {
+                opacity: 1;
+                @include translate3d(0, 0, 0);
+            }
+        }
     }
 
     .work-description {
