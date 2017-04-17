@@ -1,138 +1,65 @@
 [
 	{
-		"title":"Migrant Offshore Aid Station",
+		"title":"Town Moto - Designer",
+		"slug":"town-moto-ad",
+		"role":"Digital Designer",
+		"imageDesc": "A leg on a footpeg on a motorcycle.",
+		"image":"/resources/images/thumbnails/townmoto-ad.jpg"
+	},
+	{
+		"title":"Tour De Bloc",
+		"slug":"tour-de-bloc",
+		"imageDesc": "A woman rock climbing.",
+		"image":"/resources/images/thumbnails/tour-de-bloc.jpg"
+	},
+	{
+		"title":"MOAS - Spec",
 		"slug":"migrant-offshore-aid-station",
-		"role":"Art Direction",
-		"image":"/wendy/resources/images/child-crying.jpg",
-		"description":"<p>Migrant Offshore Aid Station is a privately funded organization that saves refugees who are fleeing from their home country on dinghies from drowning at sea. By targeting visible achievers (in airports), the campaign would demonstrate the relationship between the journey of a traveler and the journey of a refugee. </p><p>Art Director: Wendy La, Copy Writer: <a href=\"https://nickperrywriter.squarespace.com/work/#/migrant-offshore-aid-station/\">Nick Perry</a></p>",
-		"gallery":[
-			{
-				"image":"/wendy/resources/images/moas/moas.jpg",
-				"description":"<p>OOH Airport</p>"
-			},
-			{
-				"image":"/wendy/resources/images/moas/moas2.jpg",
-				"description":"<p>OOH Airport</p>"
-			},
-			{
-				"image":"/wendy/resources/images/moas/moas3.jpg",
-				"description":"<p>OOH Airport</p>"
-			},
-			{
-				"image":"/wendy/resources/images/moas/moas4.jpg",
-				"description":"<p>OOH Airport</p>"
-			},
-			{
-				"image":"/wendy/resources/images/moas/moas5.jpg",
-				"description":"<p>Elevator Airport Ad/Experiential: Using the confinement of an elevator, a video will be playing that will create a live and simulated experience of being in a dinghy, similar to what a refugee would be on. The video will emulate the experience a refugee would endure while traveling sea, fleeing from their war-torn country.</p>"
-			},
-			{
-				"image":"/wendy/resources/images/moas/moas6.jpg",
-				"description":"<p>Ambient</p>"
-			}
-		]
+		"imageDesc": "Refugee child crying on a shore.",
+		"image":"/resources/images/thumbnails/moas.jpg"
 	},
 	{
-		"title":"Starbucks",
+		"title":"Starbucks - Spec",
 		"slug":"starbucks",
-		"role":"Art Direction",
-		"image":"/wendy/resources/images/starbucks.jpg",
-		"description":"<p>The Starbucks Mobile Order and Pay is a new feature on the My Starbucks Rewards app that allows you to pre-order your drink on your phone to any Starbucks location. When you arrive in store, your food and/or beverage is ready and waiting for you with your name on it. The campaign execution personifies the mobile app as a pocket barista that goes where you go.</p><p>Art Director: Wendy La, <a href=\"https://willcuthbert.com\">Art Director: Will Cuthbert</a></p>",
-		"gallery":[
-			{
-				"image":"/wendy/resources/images/starbucks/starbucks.jpg",
-				"description":"<p>OOH</p>"
-			},
-			{
-				"image":"/wendy/resources/images/starbucks/starbucks2.jpg",
-				"description":"<p>OOH</p>"
-			},
-			{
-				"image":"/wendy/resources/images/starbucks/starbucks3.jpg",
-				"description":"<p>OOH</p>"
-			},
-			{
-				"image":"/wendy/resources/images/starbucks/starbucks-instagram1.jpg",
-				"description":"<p>Social Media<br>A further extension of the OOH campaign, sponsored Instagram posts will point out the major conveniences of the MOP feature within the app using additional visuals of the pocket barista. In these ads we will speak to millennials in a cheeky relatable tone of voice that reflects their sense of humour.</p>"
-			},
-			{
-				"image":"/wendy/resources/images/starbucks/starbucks-instagram2.jpg",
-				"description":"<p>Social Media</p>"
-			},
-			{
-				"image":"/wendy/resources/images/starbucks/starbucks-window.jpg",
-				"description":"<p>Ambient/Subway Takeover<br>The campaign will take over TTC subway tunnels in strategic locations. Those spots along the lines where cell service becomes available if only for a brief moment, a persistent-image sequence of posters inside the tunnels will ask our customers to prepare their app to place an order. When the train reaches an area with cell service or T-Connect Wifi, another poster will tell them to “Order Now!” The point is that when they do order, their beverage will be ready when they arrive to the nearest Starbucks location upon exiting.</p>"
-			},
-			{
-				"image":"/wendy/resources/images/starbucks/starbucks-subway.jpg",
-				"description":"<p>Ambient/Subway Takeover.</p>"
-			},
-			{
-				"image":"/wendy/resources/images/starbucks/app-enhancement.jpg",
-				"description":"<p>App Enhancement <br>To truly bring the campaign to life, we will let customers interact with a real pocket barista. Using a simple plastic prism, we can create a hologram video that will play on the customer’s phone. This hologram will replace the current video on the app’s Mobile Order &amp; Pay screen that explains how the process works. Instead of seeing a step-by-step video of MOP, customers will now be walked through the process by the pocket barista.</p> "
-			}
-		]
+		"imageDesc": "A small barista cheersing a customer with their coffee cup.",
+		"image":"/resources/images/thumbnails/starbucks.jpg"
 	},
 	{
-		"title":"Tracksmith",
+		"title":"Lifting the veil",
+		"slug":"lifting-the-veil",
+		"imageDesc": "Woman with hands raised over her head doing yoga.",
+		"image":"/resources/images/thumbnails/lifting-the-veil.jpg"
+	},
+	{
+		"title":"Town Moto - Brand Manager",
+		"slug":"town-moto-bm",
+		"role":"Digital Designer",
+		"imageDesc": "A man on a motorcycle with his foot on the ground waiting.",
+		"image":"/resources/images/thumbnails/townmoto-bm.jpg"
+	},
+
+	{
+		"title":"Tracksmith - Spec",
 		"slug":"tracksmith",
-		"role":"Art Direction",
-		"image":"/wendy/resources/images/tracksmith.jpg",
-		"description":"<p>Tracksmith is a brand dedicated to the all-year-round runner. The brand harks back to the collegiate athlete who is methodical, conscientious and passionate about running. The campaign positions itself as a premium active wear for both the elite runners and running nerds.</p><p>For the ambient execution, Tracksmith will take over a portion of a highway and make it feel like a marathon.</p>",
-		"gallery": [
-			{
-				"image":"resources/images/tracksmith/tracksmith-web.jpg",
-				"description":"<p>Print</p>"
-			},
-			{
-				"image":"resources/images/tracksmith/tracksmith-web2.jpg",
-				"description":"<p>Print</p>"
-			},
-			{
-				"image":"resources/images/tracksmith/tracksmith-web3.jpg",
-				"description":"<p>Print</p>"
-			},
-			{
-				"image":"resources/images/tracksmith/ambient-start.jpg",
-				"description":"<p>Ambient</p>"
-			},
-			{
-				"image":"resources/images/tracksmith/ambient-finish.jpg",
-				"description":"<p>Ambient</p>"
-			},
-			{
-				"image":"resources/images/tracksmith/ambient-10.jpg",
-				"description":"<p>Ambient</p>"
-			}
-		]
+		"imageDesc": "A woman sprinting forward.",
+		"image":"/resources/images/thumbnails/tracksmith.jpg"
 	},
 	{
-		"title":"Levi's",
+		"title":"Levi's - Spec",
 		"slug":"levis",
-		"role":"Art Direction",
-		"image":"/wendy/resources/images/levis.jpg",
-		"description":"<p>Levi's Commuter jeans are designed for the commuting cyclist. Whether you are biking to work or to see friends, commuter jeans are designed for the comforting of riding your bicycle. Targeting both female and male commuters in their mid 20s to late 30s, this campaign illustrate how liberating having jeans that conform to your lifestyle. The commuter jeans sets your riding experience free.</p>",
-		"gallery":[
-			{
-				"image":"/wendy/resources/images/levis/levis.jpg",
-				"description":"<p>Print</p>"
-			},
-			{
-				"image":"/wendy/resources/images/levis/levis2.jpg",
-				"description":"<p>Print</p>"
-			},
-			{
-				"image":"/wendy/resources/images/levis/levis3.jpg",
-				"description":"<p>Print</p>"
-			},
-			{
-				"image":"/wendy/resources/images/levis/levis-magazine.jpg",
-				"description":"<p>Print</p>"
-			},
-			{
-				"image":"/wendy/resources/images/levis/levis-instagram.jpg",
-				"description":"<p>Social Media</p>"
-			}
-		]
+		"imageDesc": "A man cycling with elongated shadow.",
+		"image":"/resources/images/thumbnails/levis.jpg"
+	},
+	{
+		"title":"Logo & rebranding",
+		"slug":"logo-rebranding",
+		"imageDesc": "WL logo",
+		"image":"/resources/images/thumbnails/logo-rebranding.jpg"
+	},
+	{
+		"title":"Personal Work",
+		"slug":"personal-work",
+		"imageDesc": "WL logo",
+		"image":"/resources/images/thumbnails/personal-work.jpg"
 	}
 ]

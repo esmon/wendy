@@ -9,62 +9,93 @@
 		<meta name="author" content="Wendy La">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<link rel="apple-touch-icon" sizes="57x57" href="/wendy/resources/images/favicon/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/wendy/resources/images/favicon/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/wendy/resources/images/favicon/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/wendy/resources/images/favicon/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/wendy/resources/images/favicon/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/wendy/resources/images/favicon/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/wendy/resources/images/favicon/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/wendy/resources/images/favicon/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/wendy/resources/images/favicon/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="/wendy/resources/images/favicon/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/wendy/resources/images/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="/wendy/resources/images/favicon/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/wendy/resources/images/favicon/favicon-16x16.png">
-		<link rel="manifest" href="/wendy/resources/images/favicon/manifest.json">
+		<link rel="apple-touch-icon" sizes="57x57" href="/resources/images/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/resources/images/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/resources/images/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/resources/images/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/resources/images/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/resources/images/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/resources/images/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/resources/images/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/resources/images/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/resources/images/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/resources/images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/resources/images/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/resources/images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/resources/images/favicon/manifest.json">
 		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="/wendy/resources/images/favicon/ms-icon-144x144.png">
+		<meta name="msapplication-TileImage" content="/resources/images/favicon/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-		<link rel="stylesheet" href="/wendy/resources/css/flexboxgrid.min.css" type="text/css">
-		<link rel="stylesheet" href="/wendy/resources/css/main.css" type="text/css">
-		<base href="/wendy/">
+		<link rel="stylesheet" href="/resources/css/flexboxgrid.min.css" type="text/css">
+		<link rel="stylesheet" href="/resources/css/main.css" type="text/css">
+		<base href="/">
 	</head>
 
 	<body ng-controller="masterCtrl">
-		<nav class="nav-container">
+		<nav class="nav-container" ng-cloak>
 			<section class="wrap container-fluid">
-				<a ui-sref="home" class="logo">
-					<img src="/wendy/resources/images/logo.png" alt="logo">
+				<a ui-sref="home" class="logo" ng-click="hideMobileNav()">
+					<img src="/resources/images/logo.png" alt="Wendy La logo">
 				</a>
 				
 				<ul class="nav-content-container">
 					<li class="nav-content">
-						<a ui-sref="works" ng-class="{'is-active': navState === 'works'}">Work</a>
+						<a ui-sref="works" ng-class="{'is-active': navState === 'works'}" ng-click="hideMobileNav()">Work</a>
 					</li>
 					<li class="nav-content">
-						<a ui-sref="about" ng-class="{'is-active': navState === 'about'}">About</a>
+						<a ui-sref="about" ng-class="{'is-active': navState === 'about'}" ng-click="hideMobileNav()">About</a>
 					</li>
 					<li class="nav-content">
-						<a href="/wendy/resources/wendy_la_resume.pdf" target="_blank">Resumé</a>
+						<a href="/resources/wla_resume.pdf" target="_blank" ng-click="hideMobileNav()">CV</a>
 					</li>
-					<li class="nav-content">
-						<a ui-sref="contact" ng-class="{'is-active': navState === 'contact'}">Contact</a>
-					</li>
+<!-- 					<li class="nav-content">
+						<a ui-sref="contact" ng-class="{'is-active': navState === 'contact'}" ng-click="hideMobileNav()">Contact</a>
+					</li> -->
 				</ul>
+
+				<a href="#" class="menu-toggle" ng-click="mobileMenuToggle()"><span class="menu-burger"></span></a>
 			</section>
 		</nav>
 
 		<main class="main-container" ng-cloak>
 
-			<section ui-view ng-cloak ng-class="{'view-container--home': navState === 'home', 'view-container--about': navState === 'about', 'view-container--works': navState === 'works', 'view-container--contact': navState === 'contact'}" class="view-container"></section>
+			<section ui-view ng-cloak ng-class="{'view-container--home': navState === 'home'}" class="view-container"></section>
 
 		</main>
 
-		<script rel="preload" src="/wendy/resources/js/vendor.js" as="script"></script>
-		<script rel="preload" src="/wendy/resources/js/main.js" as="script"></script>
+		<footer class="footer__container" ng-cloak>
+			<section class="wrap container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+						<h3 class="footer__heading">Hey! Thanks for visiting.</h3>
+						<p class="footer__copy">Want to know more? Have more questions? Want to collaborate? I’m always looking for fun and new ideas. Let’s chat.</p>
+					</div>
+					<div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-3 col-lg-4 col-lg-offset-3">
+						<h3 class="footer__heading">Say what’s up!</h3>
+						<p class="footer__copy">Email: wendylaurala@gmail.com<br>
+							<a href="https://ca.linkedin.com/in/wendy-la-32a2b961" class="footer__link">LinkedIn</a><br>
+							<a href="https://instagram.com/wendemis" class="footer__link">Instagram</a>
+						</p>
+					</div>
+				</div>
+			</section>
+		</footer>
+
+		<script rel="preload" src="/resources/js/vendor.js" as="script"></script>
+		<script rel="preload" src="/resources/js/main.js" as="script"></script>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-90164915-1', 'auto');
+			ga('send', 'pageview');
+
+		</script>
 
 	</body>
 </html>

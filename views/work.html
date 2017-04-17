@@ -1,6 +1,6 @@
 <section class="wrap container-fluid">
 	<aside class="work-meta">
-		<h1>{{ work.title }}</h1>
+		<h1 class="work-meta__title">{{ work.title }}</h1>
 		<article dynamic-html markup="work.description"></article>
 	</aside>
 
@@ -13,10 +13,10 @@
 		
 	</section>
 
-	<aside class="work-nav">
+<!-- 	<aside class="work-nav">
 		<a ng-if="neighbours.previous.slug" ng-href="/work/{{ neighbours.previous.slug }}">prev</a>
 		<a ng-if="neighbours.next.slug" ng-href="/work/{{ neighbours.next.slug }}">next</a>
-	</aside>
-
-	<div works-grid works="works"></div>
+	</aside> -->
 </section>
+
+<div works-grid works="works"></div>

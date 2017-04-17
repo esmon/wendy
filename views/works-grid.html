@@ -2,12 +2,11 @@
 	<div class="wrap container-fluid">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" ng-repeat="work in works">
-				<a ui-sref="work({slug: work.slug})" class="box work-content"  style="background-image: url({{ work.image }});">
-					<p class="work-description">
+				<a ui-sref="work({slug: work.slug})" class="box work-content">
+					<img ng-src="{{ work.image }}" alt="{{ work.imageDesc }}" class="work-grid__image">
+					<span class="work-description">
 						{{ work.title }}
-						<br>
-						<span>{{ work.role }}</span>
-					</p>
+					</span>
 				</a>
 			</div>
 		</div>

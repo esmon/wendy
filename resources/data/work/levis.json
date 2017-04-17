@@ -1,29 +1,18 @@
 {
 	"title":"Levi's",
-	"slug":"levis",
-	"role":"Art Direction",
-	"image":"/wendy/resources/images/levis.jpg",
-	"description":"<p>Levi's Commuter jeans are designed for the commuting cyclist. Whether you are biking to work or to see friends, commuter jeans are designed for the comforting of riding your bicycle. Targeting both female and male commuters in their mid 20s to late 30s, this campaign illustrate how liberating having jeans that conform to your lifestyle. The commuter jeans sets your riding experience free.</p>",
+	"description":"<p>The original blue jeans are synonymous with the Levi’s brand, the most recognized denim makers in the world. Their recent collection of Commuter jeans caters specifically to the lifestyle of cyclist who require more needs than an average wearer.</p><p>Targeting both male and females between 25-35, the campaign execution tells the story of the commuter enhanced and liberated by the latest textile technology made for urban riding.</p><p>My role: Art Direction and design.</p>",
 	"gallery":[
 		{
-			"image":"/wendy/resources/images/levis/levis.jpg",
-			"description":"<p>Print</p>"
+			"image":"/resources/images/works/levis/levis-1.jpg"
 		},
 		{
-			"image":"/wendy/resources/images/levis/levis2.jpg",
-			"description":"<p>Print</p>"
+			"image":"/resources/images/works/levis/levis-2.jpg"
 		},
 		{
-			"image":"/wendy/resources/images/levis/levis3.jpg",
-			"description":"<p>Print</p>"
+			"image":"/resources/images/works/levis/levis-3.jpg"
 		},
 		{
-			"image":"/wendy/resources/images/levis/levis-magazine.jpg",
-			"description":"<p>Print</p>"
-		},
-		{
-			"image":"/wendy/resources/images/levis/levis-instagram.jpg",
-			"description":"<p>Social Media</p>"
+			"image":"/resources/images/works/levis/levis-4.jpg"
 		}
 	]
 }
