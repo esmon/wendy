@@ -4,62 +4,62 @@
 		"slug":"town-moto-ad",
 		"role":"Digital Designer",
 		"imageDesc": "A leg on a footpeg on a motorcycle.",
-		"image":"/wendy/resources/images/thumbnails/townmoto-ad.jpg"
+		"image":"/resources/images/thumbnails/townmoto-ad.jpg"
 	},
 	{
 		"title":"Tour De Bloc",
 		"slug":"tour-de-bloc",
 		"imageDesc": "A woman rock climbing.",
-		"image":"/wendy/resources/images/thumbnails/tour-de-bloc.jpg"
+		"image":"/resources/images/thumbnails/tour-de-bloc.jpg"
 	},
 	{
 		"title":"MOAS - Spec",
 		"slug":"migrant-offshore-aid-station",
 		"imageDesc": "Refugee child crying on a shore.",
-		"image":"/wendy/resources/images/thumbnails/moas.jpg"
+		"image":"/resources/images/thumbnails/moas.jpg"
 	},
 	{
 		"title":"Starbucks - Spec",
 		"slug":"starbucks",
 		"imageDesc": "A small barista cheersing a customer with their coffee cup.",
-		"image":"/wendy/resources/images/thumbnails/starbucks.jpg"
+		"image":"/resources/images/thumbnails/starbucks.jpg"
 	},
 	{
 		"title":"Lifting the veil",
 		"slug":"lifting-the-veil",
 		"imageDesc": "Woman with hands raised over her head doing yoga.",
-		"image":"/wendy/resources/images/thumbnails/lifting-the-veil.jpg"
+		"image":"/resources/images/thumbnails/lifting-the-veil.jpg"
 	},
 	{
 		"title":"Town Moto - Brand Manager",
 		"slug":"town-moto-bm",
 		"role":"Digital Designer",
 		"imageDesc": "A man on a motorcycle with his foot on the ground waiting.",
-		"image":"/wendy/resources/images/thumbnails/townmoto-bm.jpg"
+		"image":"/resources/images/thumbnails/townmoto-bm.jpg"
 	},
 
 	{
 		"title":"Tracksmith - Spec",
 		"slug":"tracksmith",
 		"imageDesc": "A woman sprinting forward.",
-		"image":"/wendy/resources/images/thumbnails/tracksmith.jpg"
+		"image":"/resources/images/thumbnails/tracksmith.jpg"
 	},
 	{
 		"title":"Levi's - Spec",
 		"slug":"levis",
 		"imageDesc": "A man cycling with elongated shadow.",
-		"image":"/wendy/resources/images/thumbnails/levis.jpg"
+		"image":"/resources/images/thumbnails/levis.jpg"
 	},
 	{
 		"title":"Logo & rebranding",
 		"slug":"logo-rebranding",
 		"imageDesc": "WL logo",
-		"image":"/wendy/resources/images/thumbnails/logo-rebranding.jpg"
+		"image":"/resources/images/thumbnails/logo-rebranding.jpg"
 	},
 	{
 		"title":"Personal Work",
 		"slug":"personal-work",
 		"imageDesc": "WL logo",
-		"image":"/wendy/resources/images/thumbnails/personal-work.jpg"
+		"image":"/resources/images/thumbnails/personal-work.jpg"
 	}
 ]
