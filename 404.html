@@ -42,10 +42,10 @@
 
 				<ul class="nav-content-container">
 					<li class="nav-content">
-						<a ui-sref="works" ng-class="{'is-active': navState === 'works'}" ng-click="hideMobileNav()">Work</a>
+						<a ui-sref="works" ui-sref-active="is-active" ng-click="hideMobileNav()">Work</a>
 					</li>
 					<li class="nav-content">
-						<a ui-sref="about" ng-class="{'is-active': navState === 'about'}" ng-click="hideMobileNav()">About</a>
+						<a ui-sref="about" ui-sref-active="is-active" ng-click="hideMobileNav()">About</a>
 					</li>
 					<li class="nav-content">
 						<a href="/resources/wla_resume.pdf" target="_blank" ng-click="hideMobileNav()">CV</a>
